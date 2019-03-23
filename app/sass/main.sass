@@ -1,0 +1,404 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "base"
+
+::placeholder
+	color: #666
+
+.container
+	max-width: 1240px
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Proxima Nova Regular'
+	overflow-x: hidden
+	color: $text
+
+.site-header
+	padding-top: 24px
+	.header-menu
+		padding: 0
+		display: flex
+		margin-bottom: 28px
+		.header-logo
+			margin-right: 44px
+			img
+				margin-top: 18px
+				width: 196px
+				height: auto
+	.menu-container
+		max-width: 1230px
+.header-menu-content
+	width: 100%
+.top-menu
+	margin-bottom: 21px
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		display: flex
+		justify-content: flex-end
+		li
+			margin: 0 14px
+			font-size: 15px
+			font-weight: 600
+			line-height: normal
+			&:last-child
+				margin-right: 0
+			a
+				color: $text
+				text-decoration: none
+.main-menu
+	display: flex
+	justify-content: flex-end
+.menu-phone
+	display: flex
+	margin-right: 34px
+	.number
+		font-size: 17px
+		font-weight: bold
+		color: $text
+	.phone-image
+		margin: 0 21px 0 16px
+	.first-number
+		a
+			font-size: 13px
+			font-weight: 600
+			color: $red
+			border-bottom: 1px dashed red
+			text-decoration: none
+		p
+			margin-bottom: 0
+	.second-number
+		.number
+			font-size: 17px
+			font-weight: bold
+			color: $text
+			margin-bottom: 4px
+		p
+			margin-bottom: 0px
+			font-size: 13px
+			color: #68757c
+.menu-search
+	position: relative
+	.search
+		height: 48px
+		border-radius: 3px
+		border: solid 2px $gray
+		padding-left: 18px
+		width: 204px
+		&::placeholder
+			font-size: 15px
+			color: #68757c
+	img
+		position: absolute
+		right: 19px
+		top: 14px
+		width: 16px
+		height: auto
+.menu-button
+	display: flex
+	.header-button
+		width: 178px
+		height: 48px
+		border-radius: 3px
+		display: block
+		text-align: center
+		line-height: 48px
+		background: $gray
+		margin-left: 10px
+		color: $text
+		text-decoration: none
+		transition: all 0.5s
+		img
+			margin-left: 10px
+		&:hover
+			opacity: 0.8
+	.basket
+		position: relative
+		text-align: left
+		padding-left: 20px
+		span
+			text-align: center
+			width: 50px
+			background: $red
+			height: 48px
+			position: absolute
+			color: $white
+			border-radius: 0 3px 3px 0
+			right: 0
+			&::before
+				content: ''
+				display: block
+				width: 0
+				height: 0
+				position: absolute
+				left: -3px
+				top: 50%
+				transform: translateY(-50%)
+				border-right: 3px solid $red
+				border-bottom: 3px solid transparent
+				border-top: 3px solid transparent		
+
+.header-navigation
+	margin-bottom: 30px
+	.navigation
+		padding: 0
+		display: flex
+		justify-content: center
+		a
+			color: $text
+			font-size: 17px
+			font-family: 'Proxima Nova Bold'
+			letter-spacing: 0.7px
+			text-transform: uppercase
+			text-decoration: none
+			border-right: 1px solid $red
+			padding: 0 28px
+			line-height: 20px
+			&:last-child
+				padding-right: 0
+				border-right: none
+			&:first-child
+				padding-left: 0
+			&:hover
+				color: #444444
+
+.navigation-container
+	max-width: 1358px
+	padding: 16px 0
+	background: $gray
+
+.header-content
+	display: flex
+	margin-bottom: 40px
+	.header-slider
+		padding-right: 0
+	.header-slider-item
+		min-height: 530px
+		background-size: cover
+		background-position: center center
+		background-repeat: no-repeat
+		padding-left: 67px
+		padding-top: 55px
+		h2
+			color: $white
+			font-size: 45px
+			font-weight: bold
+			line-height: 50px
+			margin-bottom: 20px
+			line-height: 1.11
+		a
+			text-decoration: none
+			color: $white
+
+.advertising
+	position: relative
+	.advertising-content
+		padding-top: 82px
+		padding-left: 45%
+	.first-advertising, .second-advertising
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		min-height: 255px
+		p
+			font-size: 17px
+			font-family: 'Proxima Nova Semibold'
+			line-height: 27px
+	.first-advertising
+		margin-bottom: 20px	
+		p
+			color: $white
+		a
+			text-decoration: none
+			color: $white
+			img
+				transition: all 0.3s ease
+			&:hover
+				img
+					transform: translateX(10px)
+	.second-advertising
+		span
+			font-weight: bold
+		a
+			color: $red
+			text-decoration: none
+			img
+				transition: all 0.3s ease
+			&:hover
+				img
+					transform: translateX(10px)
+.owl-carousel
+	position: relative
+	.owl-nav
+		position: absolute
+		bottom: 101px
+		left: 62px
+		display: flex
+		.owl-next, .owl-prev
+			width: 40px
+			height: 40px
+			border-radius: 50%
+			display: block
+			outline: none
+			margin: 0 6px
+			transition: all 0.5s
+			border: 2px solid $white !important
+			&:hover
+				background: $red
+				border: 2px solid $red !important
+			img
+				margin-bottom: 2px
+		.owl-prev
+			img
+				transform: rotate(-180deg) 
+	.owl-dots
+		display: none
+
+.slider-container
+	max-width: 1358px
+	padding: 0
+
+.more
+	font-size: 17px
+	font-weight: bold
+	color: $white
+	letter-spacing: 0.65px
+	text-decoration: none
+	text-transform: uppercase
+
+.button
+	width: 176px
+	height: 40px
+	border-radius: 3px
+	background: $red
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+.services
+	margin-bottom: 30px
+	.services-grid-item
+		padding-right: 0
+.service-item
+	display: flex
+	margin-bottom: 45px
+	min-height: 66px
+	align-items: flex-start
+	img
+		min-width: 43px
+		max-width: 43px
+		width: 100%
+		height: 35px
+		margin-right: 20px
+	.s-title
+		font-family: 'Proxima Nova Semibold'
+		font-size: 17px
+		line-height: 1.29
+	.s-text
+		font-family: 'Proxima Nova Lt'
+		font-size: 17px
+		line-height: 1.47			
+
+.bestsellers
+	margin-bottom: 70px
+.bestsellers-slider
+	display: flex
+	justify-content: space-between
+	position: relative
+	&.owl-carousel 
+		.owl-stage-outer
+			padding-left: 5px
+			margin-left: -5px
+			padding-bottom: 20px
+		.owl-nav.disabled
+			display: flex
+			position: absolute
+			top: -69px
+			left: 260px
+			button.owl-prev
+				transform: rotate(180deg)
+			button.owl-next,button.owl-prev
+				border: none !important
+				&:hover
+					background-color: transparent	!important
+					svg
+						path
+							fill: $red
+.card
+	max-width: 285px
+	color: $text
+	box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+	border: none
+	.card-price-list
+		margin-bottom: 20px
+	.card-title
+		font-family: 'Proxima Nova Semibold'
+		line-height: 1.32
+		font-size: 19px
+		color: $text
+		margin-bottom: 15px
+	.card-links
+		display: flex
+		justify-content: space-between
+		margin-bottom: 20px	
+	.buy-link
+		text-transform: uppercase
+		font-size: 13px
+		font-family: 'Proxima Nova Semibold'
+		letter-spacing: 0.5
+		color: $text
+		&:hover
+			text-decoration: none
+		span
+			color: $red
+	.buttons-wrap
+		display: flex
+		justify-content: space-between
+		.btn-compare
+			width: 40px
+			height: 40px
+			img
+				max-width: 100%		
+	.price-spb
+		font-size: 11px
+		family: 'Proxima Nova Semibold'
+		color: #b3babd			
+	.card-price-item
+		display: flex
+		align-items: baseline
+		.line
+			width: 100%
+			height: 1px
+			background-color: #68757c
+			opacity: 0.1
+			margin: 0 2px
+			margin-right: 5px
+		.name
+			font-family: 'Proxima Nova Lt'
+			font-size: 17px
+			min-width: 46px
+		.price
+			display: flex
+			font-size: 17px
+			font-family: 'Proxima Nova Semibold'	
+
+
+
+
+@import "media" // Always at the end

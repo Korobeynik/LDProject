@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Save</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Overview" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="LD_Main_6" transform="translate(-742.000000, -995.000000)">
+            <g id="Save" transform="translate(742.000000, 995.000000)">
+                <path d="M33.07,35 L0,35 L0,9.66 L16.24,0 L33.07,9.65 L33.07,35 Z M2,33 L31.07,33 L31.07,10.8 L16.26,2.32 L2,10.79 L2,33 Z" id="Shape" fill="#68757C" fill-rule="nonzero"></path>
+                <path d="M29,35 L5,35 L5,16 L29,16 L29,35 Z M7,33 L27,33 L27,18 L7,18 L7,33 Z" id="Shape" fill="#68757C" fill-rule="nonzero"></path>
+                <g id="Group" transform="translate(9.000000, 20.000000)" fill="#F01429">
+                    <g id="Group-4" transform="translate(0.352032, 0.000000)">
+                        <path d="M14.6479684,14.7547182 L0.647968382,14.7547182 L0.647968382,0.754718196 L14.6479684,0.754718196 L14.6479684,14.7547182 Z M2.59647221,12.8048575 L12.6994646,12.8048575 L12.6994646,2.70457892 L2.59647221,2.70457892 L2.59647221,12.8048575 Z" id="Shape" fill-rule="nonzero"></path>
+                        <rect id="Rectangle" transform="translate(7.954739, 7.795000) rotate(-45.160000) translate(-7.954739, -7.795000) " x="6.95473944" y="0" width="2" height="15.59"></rect>
+                        <rect id="Rectangle" transform="translate(7.050000, 7.779896) rotate(-44.760000) translate(-7.050000, -7.779896) " x="-1" y="6.77989572" width="16.1" height="2"></rect>
+                    </g>
+                </g>
+                <path d="M16.16,13.7 C14.1165464,13.7 12.46,12.0434536 12.46,10 C12.46,7.95654643 14.1165464,6.3 16.16,6.3 C18.2034536,6.3 19.86,7.95654643 19.86,10 C19.86,10.981301 19.4701797,11.9224105 18.7762951,12.6162951 C18.0824105,13.3101797 17.141301,13.7 16.16,13.7 Z M16.16,8.3 C15.2211159,8.3 14.46,9.06111593 14.46,10 C14.46,10.9388841 15.2211159,11.7 16.16,11.7 C17.0988841,11.7 17.86,10.9388841 17.86,10 C17.86,9.06111593 17.0988841,8.3 16.16,8.3 Z" id="Shape" fill="#68757C" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

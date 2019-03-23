@@ -1,0 +1,195 @@
+@import "vars"
+
+
+
+@media screen and (max-width: 1275px)
+	.header-navigation
+		.navigation
+			a
+				font-size: 15px
+				&:last-child
+					padding-right: 10px
+				&:first-child
+					padding-left: 10px
+
+/**/
+
+@media screen and (max-width: 1200px)
+	.site-header
+		.header-menu
+			.header-logo
+				margin-right: 0
+	.header-menu-content
+		.menu-phone
+			display: none
+	.header-navigation
+		.navigation
+			a
+				font-size: 10px
+	.header-content
+		.header-advertising
+			.advertising-content
+				left: 125px
+/**/
+
+@media screen and (max-width: 992px)
+	.header-content
+		.header-slider
+			padding-right: 15px
+			margin-bottom: 18px
+		.header-advertising
+			display: flex
+			flex-direction: row
+			.advertising-content
+				left: 290px
+			.first-advertising
+				margin-bottom: 0
+	.header-navigation
+		.navigation
+			a
+				padding: 0 16px
+/**/
+
+@media screen and (max-width: 840px)
+	.header-menu
+		flex-direction: column
+		justify-content: center
+		.header-menu-content
+			.top-menu
+				ul
+					justify-content: center
+					li
+						font-size: 13px
+			.main-menu
+				justify-content: center
+		.header-logo
+			text-align: center
+			margin-bottom: 20px
+	.header-navigation
+		.navigation
+			flex-wrap: wrap
+	.header-content
+		.header-advertising
+			flex-direction: column
+			.first-advertising, .second-advertising
+				max-width: 100%
+			.first-advertising
+				margin-bottom: 12px
+				.advertising-content
+					left: 300px
+/**/
+
+@media screen and (max-width: 480px)
+	.site-header
+		.header-menu
+			padding: 0
+			flex-direction: row
+			.header-logo
+				margin-bottom: 0
+				img
+					width: 94px
+					height: auto
+					margin-top: 8px
+	.header-menu
+		.header-menu-content
+			.top-menu
+				display: none
+			.main-menu
+				justify-content: flex-end
+				.menu-search, .menu-button
+					display: none
+				.menu-phone
+					margin-right: 0
+					display: block
+					.phone-image, .second-number
+						display: none
+					.first-number
+						display: flex
+						flex-direction: column-reverse
+						.number
+							font-size: 15px
+						a
+							margin-bottom: 8px
+	.header-navigation
+		display: none
+	.header-content
+		.header-advertising
+			display: none
+		.header-slider
+			padding: 0
+		.header-slider-item
+			min-height: 197px
+			padding-left: 17px
+			padding-top: 17px
+			h2
+				font-size: 20px
+				line-height: 24px
+			a
+				font-size: 14px
+				letter-spacing: 0.65px
+	.header-owl-carousel			
+		.owl-nav
+			display: none
+		.owl-dots
+			width: 100%
+			text-align: center
+			display: block
+			.owl-dot
+				width: 8px
+				height: 8px
+				background-color: #d8d8d8
+				border-radius: 50%
+				margin: 0 3.75px
+				outline: none
+			.owl-dot.active
+				background: $red
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+// ≥768px
++media-breakpoint-down(sm)
+
+// ≥576px
++media-breakpoint-down(xs)
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
