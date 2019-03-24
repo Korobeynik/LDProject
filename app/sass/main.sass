@@ -17,7 +17,46 @@ body
 	overflow-x: hidden
 	color: $text
 
+.logo-fixed
+	display: none
+
+
+@keyframes slidein
+	0%
+		transform: translateY(-100%)
+		opacity: 0
+	100%
+		transform: translateY(0%)
+		opacity: 1
+
 .site-header
+	&.fixed
+		position: fixed
+		z-index: 100
+		width: 100%
+		top: 0
+		left: 0
+		box-shadow: 0 5px 30px rgba(0,0,0, 0.1)
+		background-color: #fff
+		padding-top: 15px
+		animation:  slidein 0.4s ease-in-out
+		.menu-phone
+			margin-right: auto
+		.menu-search
+			display: none
+		.header-menu .header-logo img
+			width: 180px
+		.header-menu
+			margin-bottom: 15px
+		.base-logo
+			display: none
+		.logo-fixed
+			display: block
+			margin-top: 0 !important
+		.header-navigation
+			display: none
+		.top-menu
+			display: none	
 	padding-top: 24px
 	.header-menu
 		padding: 0
@@ -398,6 +437,172 @@ b, strong
 			font-size: 17px
 			font-family: 'Proxima Nova Semibold'	
 
+
+/* Objects section */
+
+
+.objects-slider
+	margin-top: -70px
+	&.owl-carousel 
+		.owl-item
+			padding-top: 70px
+		.owl-nav
+			display: flex
+			position: absolute
+			top: 0px
+			left: 330px
+			height: 50px
+			button.owl-prev
+				transform: rotate(180deg)
+			button.owl-next,button.owl-prev
+				border: none !important
+				&:hover
+					background-color: transparent	!important
+					svg
+						path
+							fill: $red
+
+.object-title-mobile
+	display: none
+
+.slider-item
+	display: flex
+	.object-description
+		min-width: 729px
+		max-width: 729px
+		background-color: #eff1f1
+		padding-left: 68px
+		padding-top: 70px
+		padding-bottom: 90px	
+		.object-title
+			font-family: 'Proxima Nova Bold'
+			line-height: 1.33
+			font-size: 30px
+			color: $text
+			text-transform: uppercase
+			margin-bottom: 25px
+			padding-right: 20%
+		.object-addres
+			font-size: 21px
+			font-family: 'Proxima Nova Semibold'
+			margin-bottom: 15px
+			img
+				margin-right: 5px
+		.object-text
+			font-size: 15px
+			line-height: 1.53
+			margin-bottom: 50px
+			padding-right: 20%
+		.mini-objects
+			width: 712px
+			display: flex
+			justify-content: space-between
+			a
+				display: inline-block
+				width: 160px
+				height: 160px
+				position: relative
+				background-size: cover
+				&.more-objects
+					position: relative
+					display: flex
+					align-items: center
+					justify-content: center
+					z-index: 10
+					&:hover
+						text-decoration: none
+					span
+						position: relative
+						z-index: 10
+						color: #fff
+					&:before
+						content: ""
+						display: block
+						width: 100%
+						height: 100%
+						left: 0
+						top: 0
+						position: absolute
+						background-color: rgba(240, 20, 41, 0.75)
+	.object-details
+		.details-image
+			width: 667px
+			height: 455px
+			background-size: cover
+			position: relative
+			top: -70px
+			left: -37px
+
+
+.objects
+	margin-bottom: 60px
+	.buttons-wrap
+		display: flex
+		justify-content: flex-end
+
+.object-details-content
+	padding-left: 100px
+	padding-right: 60px
+	position: relative
+	top: -35px
+
+.object-details-list
+	margin-bottom: 30px
+
+.object-details-item
+	display: flex
+	align-items: baseline
+	margin-bottom: 10px
+	&.material
+		.name
+			min-width: 80px
+	&.brands
+		.name
+			min-width: 65px
+		.info
+			min-width: 300px
+			color: $red
+			font-family: 'Proxima Nova Semibold'
+	.line
+		width: 100%
+		height: 1px
+		background-color: #68757c
+		opacity: 0.1
+		margin: 0 2px
+		margin-right: 5px
+	.name
+		font-family: 'Proxima Nova Lt'
+		font-size: 17px
+		min-width: 46px
+	.info
+		//display: flex
+		font-size: 17px
+		font-family: 'Proxima Nova Semibold'
+		text-align: right
+		line-height: 1
+		span
+			line-height: 1.2
+
+
+.advantages
+	.base-title
+		margin-bottom: 50px
+	.service-item
+		align-items: center
+	.s-icon-image
+		min-width: 78px
+		height: 78px
+		border-radius: 50%
+		overflow: hidden
+		background-color: #eff1f1
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-right: 20px
+		img
+			margin: 0
+			max-width: 45px 
+			height: auto
 
 
 
