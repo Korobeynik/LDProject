@@ -14,7 +14,25 @@ function screenClass() {
                 nav: true,
                 dots: true,
                 autoplayTimeout: 20000,
-                autoplayHoverPause: false
+                autoplayHoverPause: false,
+                responsiveClass: true,
+                responsive : {
+                    // breakpoint from 0 up
+                    0 : {
+                        items:1
+                    },
+                    // breakpoint from 480 up
+                    480 : {
+                       items:1
+                    },
+                    // breakpoint from 768 up
+                    768 : {
+                       items: 2
+                    },
+                    1000 : {
+                       items: 2
+                    }
+                }
             });
     }
 
@@ -110,7 +128,7 @@ $(window).scroll(function(){
         $('body').css('padding-top', 0);
         $('.site-header').removeClass('fixed');
      }
-     
+
   }
 
 });
@@ -158,6 +176,9 @@ $(document).ready(function(){
         },
         // breakpoint from 768 up
         768 : {
+           items: 3
+        },
+        1000 : {
            items: 4
         }
     }

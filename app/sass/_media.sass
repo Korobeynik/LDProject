@@ -96,6 +96,30 @@
 			.advertising-content
 				left: 125px
 
+	.footer
+		.contacts
+			.col-2
+				flex: 0 0 33.333%
+				max-width: 33.333%
+				margin-bottom: 20px
+				.contact-links
+					a
+						display: block
+		.footer-nav
+			flex-wrap: wrap
+			.footer-nav-links
+				width: 50%
+			.catalog
+				width: 50%
+				.catalog-wrap
+					display: flex
+					.catalog-nav
+						width: 50%
+			.footer-menu-nav
+				width: 50%
+			.buyers
+				width: 50%			
+
 
 
 /**/
@@ -116,9 +140,13 @@
 		.navigation
 			a
 				padding: 0 16px
+	.news .news-title .more
+		display: none			
 /**/
 
 @media screen and (max-width: 840px)
+	.col-12.col-md-3.services-grid-item
+    max-width: 100%
 	body,html
 		overflow-x: hidden
 	.header-menu
@@ -217,7 +245,7 @@
 		.services-grid-item
 			display: flex
 			.service-item
-				width: 50%
+				width: 100%
 				flex-wrap: wrap
 				text-align: center
 				align-items: flex-start
@@ -253,7 +281,7 @@
 		top: 0
 		left: 0
 		width: 100%
-		height: 300px
+		height: 600px
 	.object-details
 		width: 100%
 		position: relative
@@ -447,10 +475,13 @@
 		justify-content: space-between
 		.menu-phone
 			margin-right: 34px !important
+			.second-number
+				line-height: 16px
 			.number
 				font-size: 15px
 				margin-bottom: 0
 				line-height: 15px
+				color: $text !important
 			p
 				font-size: 11px 
 			.phone-image
@@ -460,12 +491,12 @@
 				top: -5px
 				img
 					width: 35px
-
+ 
 	body
 		padding-top: 0 !important
 	.site-header
 		padding: 15px
-		padding-top: 60px
+		padding-top: 70px
 	.site-header .header-menu .header-logo img
 		width: 120px !important
 	.site-header .header-menu
@@ -484,7 +515,8 @@
 			border: none
 			background-image: url('../img/search.svg')
 			background-position: 50% 50%
-			background-size: cover			
+			background-size: contain
+			padding: 0			
 
 	/* Mobile menu */ 
 
@@ -518,6 +550,10 @@
 
 @media screen and (max-width: 480px)
 
+	.advantages .services-grid-item .service-item
+		width: 50%
+	.slider-item .object-details .details-image
+		height: 300px
 	.manufactures .manufactures-slider .owl-stage-outer
 		padding: 10px 0
 	.manufactures .manufactures-slider .owl-stage-outer
