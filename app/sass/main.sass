@@ -606,4 +606,512 @@ b, strong
 
 
 
+.call-to-action
+	.call-to-action-item
+		padding: 55px 77px 46px
+		&.call-back
+			background-color: #eff1f1
+			background-image: url('/img/call-back.svg')
+			background-repeat: no-repeat
+			background-position: 21% 100%
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			.call-back-wrap
+				max-width: 297px
+				.base-title
+					margin-bottom: 8px
+				p
+					margin-bottom: 21px
+					color: $light
+		&.subscription
+			background-color: #68757c
+			background-image: url('/img/subscription.svg')
+			background-repeat: no-repeat
+			background-position: 76% 100%
+			.subscription-wrap
+				.base-title
+					margin-bottom: 8px
+				p
+					margin-bottom: 21px
+					color: $light
+
+
+.cooperation
+	margin-top: 57px
+	.container
+		.cooperation-tabs
+			list-style: none
+			padding: 0
+			display: flex
+			justify-content: space-between
+			margin-bottom: 39px
+			li
+				a
+					font-size: 21px
+					font-weight: bold
+					color: $text
+					border-bottom: 1px dashed #333
+					&:active
+						text-decoration: none !important
+					&:hover
+						text-decoration: none !important
+				&.active
+					a
+						border: none
+						color: $red
+						position: relative
+						&:before
+							position: absolute
+							content: ''
+							background-image: url('/img/red.svg')
+							width: 9px
+							height: 8px
+							background-repeat: no-repeat
+							background-size: cover
+							bottom: -9px
+							left: 50%
+							transform: translateX(-50%)
+	.cooperation-container
+		max-width: 1358px
+		padding: 0
+		min-height: 425px
+		.cooperation-content
+			&.owl-carousel
+				display: block
+			.tab-content
+				.tab-img
+					position: relative
+					.tab-img-wrap
+						height: 100%
+						background-repeat: no-repeat
+						background-size: cover
+						background-position: center center
+					h4
+						display: none
+						position: absolute
+						bottom: 0
+				.tab-content-wrap
+					min-width: 397px
+					padding: 55px 92px
+					background-color: $gray
+					.main-info
+						font-size: 21px
+						font-weight: 600
+						color: $text
+						margin-bottom: 20px
+					p
+						font-size: 15px
+						line-height: 1.53
+						color: $text
+						margin-bottom: 21px
+					.more
+						color: $red
+						img
+							-webkit-transition: all .3s ease
+							-o-transition: all .3s ease
+							transition: all .3s ease
+						&:hover
+							text-decoration: none
+							img
+								-webkit-transform: translateX(10px)
+								-ms-transform: translateX(10px)
+								transform: translateX(10px)
+
+
+
+
+.news
+	margin-top: 49px
+	.news-title
+		position: relative
+		.more
+			position: absolute
+			top: 7px
+			left: 195px
+			color: $red
+			img
+				-webkit-transition: all .3s ease
+				-o-transition: all .3s ease
+				transition: all .3s ease
+			&:hover
+				text-decoration: none
+				img
+					-webkit-transform: translateX(10px)
+					-ms-transform: translateX(10px)
+					transform: translateX(10px)
+	.main-news
+		margin: 0 0 24px
+		border-radius: 3px
+		box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+		.col-6
+			padding: 0
+			.news-img
+				height: 100%
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center
+			.news-content
+				padding: 39px 85px
+				.main-news-title
+					font-size: 28px
+					font-weight: 600
+					color: $text
+					line-height: 1.14
+					margin-bottom: 19px
+				.news-date
+					font-size: 13px
+					font-weight: 600
+					color: $text
+					letter-spacing: 0.5px
+				.news-text
+					font-size: 15px
+					line-height: 1.53
+					color: $text
+					margin: 20px 0 10px
+				.more
+					color: $red
+					img
+						-webkit-transition: all .3s ease
+						-o-transition: all .3s ease
+						transition: all .3s ease
+					&:hover
+						text-decoration: none
+						img
+							-webkit-transform: translateX(10px)
+							-ms-transform: translateX(10px)
+							transform: translateX(10px)
+	.news-slider
+		width: calc(100% + 30px)
+		.news-item
+			border-radius: 3px
+			box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+			.news-img
+				height: 196px
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center
+			.news-item-content
+				padding: 21px 30px
+				.news-title
+					line-height: 1.32
+					font-size: 19px
+					font-weight: 600
+					color: $text
+					margin-bottom: 7px
+				.news-text
+					line-height: 1.53
+					color: $text
+					font-size: 15px
+					margin-bottom: 11px
+				.news-links
+					display: flex
+					justify-content: space-between
+					align-items: center
+					.more
+						color: $red
+						img
+							-webkit-transition: all .3s ease
+							-o-transition: all .3s ease
+							transition: all .3s ease
+						&:hover
+							text-decoration: none
+							img
+								-webkit-transform: translateX(10px)
+								-ms-transform: translateX(10px)
+								transform: translateX(10px)
+					.news-date
+						letter-spacing: 0.5px
+						color: $text
+						font-size: 16px
+						font-weight: 600
+
+
+.manufactures
+	margin: 49px 0 38px
+	.manufactures-slider
+		.manufactures-item
+			width: 132px
+			height: 74px
+			border-radius: 3px
+			box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+			background-color: $white
+			position: relative
+			margin: 5px 0
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+		&.owl-carousel
+			.owl-nav
+				display: -webkit-box
+				display: -webkit-flex
+				display: -ms-flexbox
+				display: flex
+				position: absolute
+				top: -69px
+				left: 310px
+				.owl-prev
+					transform: rotate(180deg)
+				.owl-next, .owl-prev
+					border: none !important
+					&:hover
+						background-color: transparent	!important
+						svg
+							path
+								fill: $red
+
+
+.footer
+	padding: 43px 88px 34px
+	background-color: $gray
+	.container
+		.footer-top
+			display: none
+		.footer-nav
+			display: flex
+			justify-content: space-between
+			margin-bottom: 58px
+			.footer-nav-links
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				.social-red
+					list-style: none
+					padding: 0
+					margin-bottom: 0
+					display: flex
+					li
+						width: 35px
+						height: 35px
+						& + li
+							margin-left: 20px
+						a
+							background-image: url('/img/social-red.svg')
+							background-repeat: no-repeat
+							display: block
+							height: 100%
+							&.instagram
+								background-position: -3px -3px
+							&.facebook
+								background-position: -58px -3px
+							&.vc
+								background-position: -116px -3px
+							&.youtube
+								background-position: -175px -3px
+				.footer-nav-title
+					letter-spacing: 0.7px
+					font-size: 17px
+					font-weight: bold
+					color: $text
+					text-transform: uppercase
+				.social-share
+					list-style: none
+					padding: 0
+					display: flex
+					li	
+						width: 35px
+						height: 35px
+						& + li
+							margin-left: 5px
+						a
+							background-image: url('/img/share.svg')
+							background-repeat: no-repeat
+							display: block
+							height: 100%
+							&.skype
+								background-position: 0 0
+							&.ok
+								background-position: -41px 0
+							&.facebook
+								background-position: -82px 0
+							&.vk
+								background-position: -123px 0
+							&.whatsapp
+								background-position: -164px 0
+							&.telegram
+								background-position: -205px 0
+
+.catalog
+	.footer-nav-title
+		letter-spacing: 0.7px
+		font-size: 17px
+		font-weight: bold
+		color: $text
+		margin-bottom: 19px
+		text-transform: uppercase
+		&.mobile
+			display: none
+	.catalog-wrap
+		display: flex
+		justify-content: space-between
+		.catalog-nav
+			list-style: none
+			padding: 0
+			& + .catalog-nav
+				margin-left: 80px
+			li
+				a
+					font-size: 15px
+					font-weight: 600
+					color: $text
+					&:hover
+						text-decoration: none
+						color: $red
+					&.catalog-nav-all-item
+						color: $red
+.footer-menu-nav
+	.footer-nav-title
+		letter-spacing: 0.7px
+		font-size: 17px
+		font-weight: bold
+		color: $text
+		margin-bottom: 19px
+		text-transform: uppercase
+	ul
+		list-style: none
+		padding: 0
+		a
+			font-size: 15px
+			font-weight: 600
+			color: $text
+			&:hover
+				text-decoration: none
+				color: $red
+.buyers
+	.footer-nav-title
+		letter-spacing: 0.7px
+		font-size: 17px
+		font-weight: bold
+		color: $text
+		margin-bottom: 19px
+		text-transform: uppercase
+	ul
+		list-style: none
+		padding: 0
+		a
+			font-size: 15px
+			font-weight: 600
+			color: $text
+			&:hover
+				text-decoration: none
+				color: $red
+.contacts-mobile
+	display: none
+
+.contacts-title
+	letter-spacing: .7px
+	font-size: 17px
+	font-weight: 700
+	margin-bottom: 19px
+	text-transform: uppercase
+	font-family: 'Proxima Nova Bold'
+.contacts-aderss
+	line-height: 1.53
+	font-size: 15px
+	color: $text
+.contact-links
+	a
+		display: block
+		line-height: 1.53
+		font-size: 15px
+		color: $text
+		font-weight: 600
+
+.contacts
+	.col-2
+		display: flex
+		flex-direction: column
+		.contacts-title
+			letter-spacing: 0.7px
+			font-size: 17px
+			font-weight: bold
+			color: $text
+			margin-bottom: 19px
+		.contacts-aderss
+			line-height: 1.53
+			font-size: 15px
+			color: $text
+			margin-bottom: 14px
+		.contact-links
+			margin-top: auto
+			a
+				line-height: 1.53
+				font-size: 15px
+				color: $text
+				font-weight: 600
+				&:hover
+					text-decoration: none
+
+
+.all-contacts
+	display: flex
+	margin-top: 24px
+	margin-bottom: 25px
+	.more
+		margin-left: auto
+		color: $red
+		font-family: 'Proxima Nova Bold'
+		img
+			-webkit-transition: all .3s ease
+			-o-transition: all .3s ease
+			transition: all .3s ease
+		&:hover
+			text-decoration: none
+			img
+				-webkit-transform: translateX(10px)
+				-ms-transform: translateX(10px)
+				transform: translateX(10px)
+
+
+.soc-mobile
+	display: none
+	.footer-nav-title
+		letter-spacing: .7px
+		font-size: 17px
+		font-weight: 700
+		color: #333
+		text-transform: uppercase
+	.social-share
+		list-style: none
+		padding: 0
+		display: flex
+		li
+			width: 35px
+			height: 35px
+			& + li
+				margin-left: 5px
+			a
+				background-image: url(/img/share.svg)
+				background-repeat: no-repeat
+				display: block
+				height: 100%
+				&.skype
+					background-position: 0 0
+				&.ok
+					background-position: -41px 0
+				&.facebook
+					background-position: -82px 0
+				&.vk
+					background-position: -123px 0
+				&.whatsapp
+					background-position: -164px 0
+				&.telegram
+					background-position: -205px 0
+
+
+.footer-bottom
+	display: flex
+	justify-content: space-between
+	.footer-bottom-links
+		a
+			font-size: 15px
+			color: $text
+			text-decoration: underline
+			& + a
+				margin-left: 15px
+
+
+
 @import "media" // Always at the end

@@ -1,6 +1,71 @@
 @import "vars"
 
 
+@media screen and (max-width: 1280px)
+	.footer
+		.footer-bottom
+			flex-wrap: wrap
+			.payments
+				display: none
+
+
+@media screen and (max-width: 1200px)
+	.news
+		.news-slider
+			.col-3
+				flex: 0 0 50%
+				max-width: 50%
+				margin-bottom: 20px
+
+	.cooperation
+		.cooperation-tabs
+			display: none !important
+		.cooperation-slider
+			.owl-stage-outer
+				margin-bottom: 50px
+			.owl-dots
+				display: flex !important
+				justify-content: center
+				margin-bottom: 30px
+				.owl-dot
+					width: 8px
+					height: 8px
+					background-color: #ccc
+					margin: 0 5px
+					border-radius: 50%
+					border: none
+					&.active
+						background-color: $red
+					&:focus
+						outline: none
+
+@media screen and (min-width: 1200px)
+	.cooperation-container
+		.owl-carousel
+			display: block
+
+
+@media screen and (max-width: 1080px)
+	.cooperation
+		.container
+			.cooperation-tabs
+				display: none !important
+		.cooperation-container
+			.cooperation-slider
+				.tab-content-wrap
+					padding: 30px !important
+	.news
+		.main-news
+			.col-6
+				.news-content
+					padding: 30px
+		.news-slider
+			.col-3
+				flex: 0 0 50%
+				max-width: 50%
+				margin-bottom: 20px
+
+
 
 @media screen and (max-width: 1275px)
 	.header-navigation
@@ -30,6 +95,9 @@
 		.header-advertising
 			.advertising-content
 				left: 125px
+
+
+
 /**/
 
 @media screen and (max-width: 992px)
@@ -203,11 +271,200 @@
 			z-index: 5
 			padding: 10px 17px
 	.object-details-content
-		display: none										
+		display: none			
+
+
+
+/**/
+@media screen and (max-width: 767px) 
+	.call-to-action
+		.col-6
+			flex: 0 0 100%
+			max-width: 100%
+			padding: 17px 31px
+			.subscription-wrap
+			&.call-back
+				background-size: 158px
+			&.subscription
+				background-size: 265px
+
+	.manufactures
+		.base-title
+			text-align: center
+		.manufactures-slider
+			.owl-nav
+				display: none !important
+			.owl-stage-outer
+				margin-bottom: 50px
+			.owl-dots
+				display: flex !important
+				justify-content: center
+				margin-bottom: 30px
+				.owl-dot
+					width: 8px
+					height: 8px
+					background-color: #ccc
+					margin: 0 5px
+					border-radius: 50%
+					border: none
+					&.active
+						background-color: $red
+					&:focus
+						outline: none
+	.cooperation
+		.cooperation-slider
+			.owl-stage-outer
+				margin-bottom: 50px
+				.tab-content
+					.col-6
+						flex: 0 0 100%
+						max-width: 100%
+						&.tab-img
+							position: relative
+							height: 300px
+							.tab-img-wrap
+								h4
+									position: absolute
+									bottom: -8px
+									left: 0
+									right: 0
+									display: block
+									min-height: 55px
+									padding: 15px 33px
+									background-color: rgba(51, 51, 51, 0.5)
+									font-size: 19px
+									line-height: 1.32
+									color: $white
+						&.tab-content-wrap
+							.main-info
+								display: none !important
+								
+	
+	.footer
+		padding: 25px 10px
+		.footer-top
+			display: block !important
+			.social-red
+				display: flex
+				list-style: none
+				padding: 0
+				justify-content: center
+				margin-bottom: 50px
+				li
+					padding: 0 5px
+					min-width: 40px
+					min-height: 40px
+					a
+						&.instagram, &.facebook, &.vc, &.youtube
+							background-image: url(/img/social-red.svg)
+							background-repeat: no-repeat
+							display: block
+							height: 100%
+						&.instagram
+							background-position: -5px -1px
+						&.facebook
+							background-position: -59px -1px
+						&.vc
+							background-position: -118px -1px
+						&.youtube
+							background-position: -178px -1px
+					&.logo-mobile
+						width: 120px
+						height: 40px
+						display: block
+						img
+							max-width: 100%
+
+
+		.contacts
+			display: none
+		.footer-nav
+			flex-wrap: wrap
+			margin-bottom: 0 !important
+			.footer-nav-links
+				display: none !important
+			.catalog
+				width: 50%
+				.footer-nav-title
+					display: none
+					&.mobile
+						display: block !important
+				.catalog-wrap
+					display: flex
+					.catalog-nav
+						width: 100%
+						margin-left: 0 !important
+						&.first
+							display: none
+			.footer-menu-nav
+				width: 50%
+				padding: 0 10px
+			.buyers
+				width: 50%
+				padding: 0 10px
+			.contacts-mobile
+				display: block !important
+				width: 50%
+				padding: 0 10px
+				padding-left: 0
+		.footer-bottom
+			align-items: baseline
+			flex-direction: column-reverse
+			.copyright
+				margin-top: 10px
+			.footer-bottom-links
+				flex-wrap: wrap
+				a
+					display: block
+					margin-left: 0 !important
+		.all-contacts
+			margin: 0 0 30px
+			.more
+				margin-left: 0 !important
+		.soc-mobile
+			display: flex !important
+			flex-direction: column
+			align-items: center
+			.footer-nav-title
+				margin-bottom: 15px
+
+
+@media screen and (max-width: 720px) 
+	.news
+		.main-news
+			display: none
+		.news-slider
+			.row
+				margin: 0
+			.owl-dots
+				display: flex !important
+				justify-content: center
+				.owl-dot
+					width: 8px
+					height: 8px
+					background-color: #ccc
+					margin: 0 5px
+					border-radius: 50%
+					border: none
+					&.active
+						background-color: $red
+					&:focus
+						outline: none
+			.col-3
+				flex: 0 0 100%
+				max-width: 100%
+
+
 							
 /**/
 
 @media screen and (max-width: 480px)
+	.manufactures .manufactures-slider .owl-stage-outer
+		padding: 10px 0
+	.manufactures .manufactures-slider .owl-stage-outer
+		margin-bottom: 20px	
+	.manufactures .manufactures-slider .manufactures-item
+		margin: auto
 	.site-header
 		.header-menu
 			padding: 0
@@ -271,6 +528,33 @@
 				outline: none
 			.owl-dot.active
 				background: $red
+
+	.call-to-action
+		.col-6
+			.call-back-wrap
+				max-width: 100% !important
+				width: 100%
+				text-align: center
+				.base-btn
+					margin: 0 auto
+			.subscription-wrap
+				text-align: center
+				.base-btn
+					margin: 0 auto
+
+	.news
+		.news-title
+			text-align: center
+			.more
+				display: none			
+
+
+
+
+
+
+
+
 /**/
 
 
