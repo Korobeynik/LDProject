@@ -429,7 +429,65 @@
 				margin-bottom: 15px
 
 
-@media screen and (max-width: 720px) 
+@media screen and (max-width: 720px)
+
+	/* Mobile menu */
+
+	.mobile-fixed-line
+		display: flex
+		position: fixed
+		height: 50px
+		box-shadow: 0 0 25px 0 rgba(104, 117, 124, 0.19)
+		background-color: #fff
+		z-index: 102
+		width: 100%
+		left: 0
+		top: 0
+		padding: 10px 15px
+		justify-content: space-between
+		.menu-phone
+			margin-right: 34px !important
+			.number
+				font-size: 15px
+				margin-bottom: 0
+				line-height: 15px
+			p
+				font-size: 11px 
+			.phone-image
+				margin: 0
+				margin-right: 10px
+				position: relative
+				top: -5px
+				img
+					width: 35px
+
+	body
+		padding-top: 0 !important
+	.site-header
+		padding: 15px
+		padding-top: 60px
+	.site-header .header-menu .header-logo img
+		width: 120px !important
+	.site-header .header-menu
+		margin-bottom: 10px
+
+	.site-header.fixed
+		position: static !important	
+
+	.mobile-search
+		input
+			display: none
+		button
+			width: 22px
+			height: 22px
+			background-color: transparent
+			border: none
+			background-image: url('../img/search.svg')
+			background-position: 50% 50%
+			background-size: cover			
+
+	/* Mobile menu */ 
+
 	.news
 		.main-news
 			display: none
@@ -459,6 +517,7 @@
 /**/
 
 @media screen and (max-width: 480px)
+
 	.manufactures .manufactures-slider .owl-stage-outer
 		padding: 10px 0
 	.manufactures .manufactures-slider .owl-stage-outer

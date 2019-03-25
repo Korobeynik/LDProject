@@ -99,14 +99,20 @@ $(window).bind('resize',function(){
 let headerHeight = $('.site-header').innerHeight()
 
 $(window).scroll(function(){
-  if ($(window).scrollTop() >= 330) {
-  	$('body').css('padding-top', headerHeight);
-    $('.site-header').addClass('fixed');
-   }
-   else {
-   	$('body').css('padding-top', 0);
-    $('.site-header').removeClass('fixed');
-   }
+
+  if($(window).innerWidth() > 960) {
+
+     if ($(window).scrollTop() >= 330) {
+        $('body').css('padding-top', headerHeight);
+        $('.site-header').addClass('fixed');
+       }
+       else {
+        $('body').css('padding-top', 0);
+        $('.site-header').removeClass('fixed');
+     }
+     
+  }
+
 });
 
 $(document).ready(function(){
