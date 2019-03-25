@@ -135,6 +135,8 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
+  $('[data-toggle="tooltip"]').tooltip();
+
 	$('.mini-objects .mini-object').on('click', function(event) {
 		event.preventDefault();
 		let url = $(this).attr('href');

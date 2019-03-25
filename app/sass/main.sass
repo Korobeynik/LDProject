@@ -105,13 +105,14 @@ body
 		color: $text !important
 		border-bottom: none !important
 	.phone-image
-		margin: 0 21px 0 16px
+		margin: 0 15px 0 25px
+		a
+			display: inline-block
 	.first-number
 		.number
 			font-size: 17px
-			font-weight: bold
+			font-weight: bold  
 			color: $text
-			margin-bottom: 4px
 			display: block
 		a
 			font-size: 13px
@@ -205,20 +206,37 @@ body
 			letter-spacing: 0.7px
 			text-transform: uppercase
 			text-decoration: none
-			border-right: 1px solid $red
-			padding: 0 28px
+			// border-right: 1px solid $red
+			padding: 16px 28px
 			line-height: 20px
+			position: relative
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				right: 0px
+				top: 50%
+				transform: translateY(-50%)
+				height: 30%
+				width: 1px
+				background-color: $red
 			&:last-child
-				padding-right: 0
+				padding-right: 28px
 				border-right: none
+				&:before
+					display: none
 			&:first-child
-				padding-left: 0
+				padding-left: 28px
 			&:hover
-				color: #444444
+				background-color: $red
+				color: #fff
+				+ a
+						&:after
+							right: 1px
 
 .navigation-container
 	max-width: 1358px
-	padding: 16px 0
+	// padding: 16px 0
 	background: $gray
 
 .header-content
