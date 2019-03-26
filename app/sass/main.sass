@@ -806,10 +806,13 @@ b, strong
 		.col-6
 			padding: 0
 			.news-img
+				position: relative
 				height: 100%
 				background-repeat: no-repeat
 				background-size: cover
 				background-position: center center
+				.main-news-title
+					display: none
 			.news-content
 				padding: 39px 85px
 				.main-news-title
@@ -1172,5 +1175,9 @@ b, strong
 				margin-left: 15px
 
 
+.owl-carousel
+	.owl-next
+		svg
+			margin-top: 2px
 
 @import "media" // Always at the end
