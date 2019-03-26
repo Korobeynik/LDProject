@@ -143,6 +143,8 @@ body
 		&::placeholder
 			font-size: 15px
 			color: #68757c
+		&:focus
+			outline: none	
 	img
 		position: absolute
 		right: 19px
@@ -155,23 +157,52 @@ body
 		width: 178px
 		height: 48px
 		border-radius: 3px
-		display: block
+		display: flex
+		align-items: center
+		justify-content: center
 		text-align: center
-		line-height: 48px
 		background: $gray
 		margin-left: 10px
 		color: $text
 		text-decoration: none
 		transition: all 0.5s
+		span
+			font-family: 'Proxima Nova Semibold'
+			text-transform: uppercase
+			font-size: 13px
+			line-height: 10px
+			position: relative
+			top: 1px	
+		&:hover
+			svg
+				g
+					fill: #68757c
 		img
 			margin-left: 10px
 		&:hover
 			opacity: 0.8
 	.basket
 		position: relative
-		text-align: left
-		padding-left: 20px
-		span
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-left: 0px
+		&:hover
+			svg
+				g
+					fill: #68757c
+		.cart-text
+			display: inline-block
+			margin-left: -45px
+			margin-right: 7px
+			font-family: 'Proxima Nova Semibold'
+			text-transform: uppercase
+			font-size: 13px			
+		.cart-count
+			display: flex
+			align-items: center
+			justify-content: center
 			text-align: center
 			width: 50px
 			background: $red
@@ -312,7 +343,7 @@ body
 			border-radius: 50%
 			display: block
 			outline: none
-			margin: 0 6px
+			margin: 0 4px
 			transition: all 0.5s
 			border: 2px solid $white !important
 			&:hover
