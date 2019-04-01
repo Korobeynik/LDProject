@@ -700,84 +700,83 @@ b, strong
 
 .cooperation
 	margin-top: 57px
-	.container
-		.cooperation-tabs
-			list-style: none
-			padding: 0
-			display: flex
-			justify-content: space-between
-			margin-bottom: 39px
-			li
-				a
+.cooperation-tabs
+	list-style: none
+	padding: 0
+	display: flex
+	justify-content: space-between
+	margin-bottom: 39px
+	li
+		a
+			font-size: 21px
+			font-weight: bold
+			color: $text
+			border-bottom: 1px dashed #333
+			&:active
+				text-decoration: none !important
+			&:hover
+				text-decoration: none !important
+		&.active
+			a
+				border: none
+				color: $red
+				position: relative
+				&:before
+					position: absolute
+					content: ''
+					background-image: url('/img/red.svg')
+					width: 9px
+					height: 8px
+					background-repeat: no-repeat
+					background-size: cover
+					bottom: -9px
+					left: 50%
+					transform: translateX(-50%)
+.cooperation-container
+	max-width: 1358px
+	padding: 0
+	min-height: 425px
+	.cooperation-content
+		&.owl-carousel
+			display: block
+		.tab-content
+			.tab-img
+				position: relative
+				.tab-img-wrap
+					height: 100%
+					background-repeat: no-repeat
+					background-size: cover
+					background-position: center center
+				h4
+					display: none
+					position: absolute
+					bottom: 0
+			.tab-content-wrap
+				min-width: 397px
+				padding: 55px 92px
+				background-color: $gray
+				.main-info
 					font-size: 21px
-					font-weight: bold
+					font-weight: 600
 					color: $text
-					border-bottom: 1px dashed #333
-					&:active
-						text-decoration: none !important
+					margin-bottom: 20px
+				p
+					font-size: 15px
+					line-height: 1.53
+					color: $text
+					margin-bottom: 21px
+				.more
+					color: $red
+					img
+						-webkit-transition: all .3s ease
+						-o-transition: all .3s ease
+						transition: all .3s ease
 					&:hover
-						text-decoration: none !important
-				&.active
-					a
-						border: none
-						color: $red
-						position: relative
-						&:before
-							position: absolute
-							content: ''
-							background-image: url('/img/red.svg')
-							width: 9px
-							height: 8px
-							background-repeat: no-repeat
-							background-size: cover
-							bottom: -9px
-							left: 50%
-							transform: translateX(-50%)
-	.cooperation-container
-		max-width: 1358px
-		padding: 0
-		min-height: 425px
-		.cooperation-content
-			&.owl-carousel
-				display: block
-			.tab-content
-				.tab-img
-					position: relative
-					.tab-img-wrap
-						height: 100%
-						background-repeat: no-repeat
-						background-size: cover
-						background-position: center center
-					h4
-						display: none
-						position: absolute
-						bottom: 0
-				.tab-content-wrap
-					min-width: 397px
-					padding: 55px 92px
-					background-color: $gray
-					.main-info
-						font-size: 21px
-						font-weight: 600
-						color: $text
-						margin-bottom: 20px
-					p
-						font-size: 15px
-						line-height: 1.53
-						color: $text
-						margin-bottom: 21px
-					.more
-						color: $red
+						text-decoration: none
 						img
-							-webkit-transition: all .3s ease
-							-o-transition: all .3s ease
-							transition: all .3s ease
-						&:hover
-							text-decoration: none
-							img
-								-webkit-transform: translateX(10px)
-								-ms-transform: translateX(10px)
-								transform: translateX(10px)
+							-webkit-transform: translateX(10px)
+							-ms-transform: translateX(10px)
+							transform: translateX(10px)
 
 
 
