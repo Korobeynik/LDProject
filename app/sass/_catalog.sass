@@ -1,0 +1,152 @@
+.catalog-grid
+	display: flex
+	width: 100%
+	margin-bottom: 40px
+
+.catalog-content
+	display: flex
+	width: 100%
+	justify-content: space-between
+	.card
+		max-width: 288px	
+
+.catalog-sidebar
+	min-width: 287px
+	background-color: #eff1f1
+	padding: 22px 17px
+	border-radius: 3px
+	margin-left: 30px
+
+
+.caption
+	display: flex
+	justify-content: space-between
+	margin-bottom: 18px
+	span
+		display: inline-block
+		background-color: #fff
+		padding: 10px 15px
+		font-size: 15px
+		color: #68757c !important
+		border-radius: 3px
+		min-width: 106px
+
+
+.masonry
+	margin-bottom: 28px
+	label
+		margin-bottom: 10px
+		display: block
+		font-size: 14px
+
+.masonry
+	width: 100%
+	label
+		color: #fff
+		font-weight: 500
+	.input-wrap
+		width: 100%	
+		display: flex
+		justify-content: space-between
+		margin-top: 5px
+	input
+		font-size: 13px !important
+		display: inline-block
+		height: 13px
+		width: 65px
+		border: none
+
+.noUi-horizontal .noUi-handle
+	width: 6px
+	height: 6px
+	background-color: #fff
+	cursor: default
+	-ms-touch-action: none
+	touch-action: none
+	cursor: pointer
+	border-radius: 50%
+	border: 8px solid $red
+.noUi-horizontal
+	height: 4px
+	background-color: #fff
+.noUi-target
+	background-color: #fff
+	border: none
+	box-shadow: none
+.noUi-handle
+	border: none
+	background-color: #fff !important
+	box-shadow: none
+
+.noUi-horizontal .noUi-handle
+	top: -6px
+	left: -4px
+	background-color: #fff !important
+	&:before
+		display: none
+	&:after
+		display: none	
+.noUi-connect
+	background-color: #b3babd !important		
+
+
+
+.filter-item
+	.container
+		display: block
+		position: relative
+		padding-left: 35px
+		margin-bottom: 12px
+		cursor: pointer
+		font-size: 14px
+		user-select: none
+		text-align: left
+		padding-right: 35px
+		margin-left: 0
+		margin-top: 10px
+		top: -4px
+		a
+			text-decoration: underline
+		input
+			position: absolute
+			opacity: 0
+			cursor: pointer
+			height: 0
+			width: 0
+
+
+	.checkmark
+		position: absolute
+		top: 0
+		left: 0
+		height: 20px
+		width: 20px
+		border-radius: 3px
+		background-color: #eee
+
+
+	.container
+		&:hover input ~ .checkmark
+			background-color: #fff
+		input:checked ~ .checkmark
+			background-color: #fff
+
+
+	.checkmark:after
+		content: ""
+		position: absolute
+		display: none
+
+	.container
+		input:checked ~ .checkmark:after
+			display: block
+		.checkmark:after
+			left: 7px
+			top: 3px
+			width: 7px
+			height: 12px
+			border: solid $red
+			border-width: 0 2px 2px 0
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)	
