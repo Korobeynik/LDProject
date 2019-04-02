@@ -129,6 +129,20 @@
 			outline: none
 			border-radius: 3px
 			border: 1px solid $gray
+			&::after
+				right: 19px
+				width: 7px
+				height: 7px
+
+			span
+				font-size: 15px
+				color: $d-gray
+				font-weight: 400
+			.list
+				width: 100%
+				li
+					padding-left: 25px
+
 	span
 		color: $red
 		font-weight: 600
@@ -512,6 +526,8 @@
 		margin-bottom: 0
 		span
 			color: $red
+.feedback-slider
+	display: flex
 .feedback-item
 	max-width: 599px
 	border: 2px solid $gray
@@ -557,6 +573,14 @@
 						font-weight: 600
 						color: $red
 						margin-bottom: 0
+			.description-image
+				position: relative
+				margin-left: 50px
+				img
+					position: relative
+					bottom: -12px
+					width: 156px
+					height: auto
 		.advantages-product
 			display: flex
 			justify-content: space-between
