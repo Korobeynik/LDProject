@@ -497,6 +497,7 @@
 					color: $text
 	.popular
 		display: flex
+		margin-bottom: 25px
 		a:last-child
 			margin-left: 0
 			margin-right: 0
@@ -515,6 +516,8 @@
 
 .feedback-tile
 	margin-bottom: 54px
+	.container
+		padding: 0
 
 .feedback-title
 	margin-bottom: 28px
@@ -528,6 +531,20 @@
 			color: $red
 .feedback-slider
 	display: flex
+	.owl-nav.disabled
+		display: flex
+		position: absolute
+		top: -69px
+		left: 560px
+		button.owl-prev
+			transform: rotate(180deg)
+		button.owl-next,button.owl-prev
+			border: none !important
+			&:hover
+				background-color: transparent	!important
+				svg
+					path
+						fill: $red
 .feedback-item
 	max-width: 599px
 	border: 2px solid $gray
@@ -729,12 +746,26 @@ a.filter-link
 
 @media screen and (max-width: 992px)
 	//code
+
+	.breadcrumbs .breadcrumbs-list
+		flex-wrap: wrap
 	.section-catalog-content
 		display: none
+	.filter-section .filter-color .color-content .item-color
+		width: 24px
+		height: 24px	
 	.mobile-filter-btn
 		display: flex
+		margin-left: 15px
+		&.active
+			img
+				transform: rotate(180deg)
+		span
+			width: auto !important
+			display: inline-block !important
 	.catalog-head
 		flex-wrap: wrap
+		margin-bottom: 30px
 		.base-title
 			width: 100%
 		span
@@ -751,6 +782,7 @@ a.filter-link
 		flex-wrap: wrap
 		align-items: center
 		text-align: center
+		margin-bottom: 20px
 	.catalog-head .catalog-popular
 		display: none	
 	.catalog-grid
@@ -758,8 +790,53 @@ a.filter-link
 	.catalog-sidebar
 		position: absolute
 		left: 0
-		top: 0
-		margin: 0					
+		top: -30px
+		width: 100%
+		margin: 0
+		display: none
+
+	// .catalog-content
+	// 	.card .buy-link
+	// 		font-size: 9px 
+	// 	.card
+	// 		width: 47%
+	// 		min-width: auto
+	// 		margin: 5px
+	// 		.base-btn
+	// 			width: 86px
+	// 			span
+	// 				display: none
+	// 		.buy-link
+	// 			font-size: 8px
+	// 		.card-title
+	// 			font-size: 12px
+	// 		.card-price-item	
+	// 			.price
+	// 				font-size: 12px
+	// 			.name
+	// 				font-size: 12px
+
+	.adv-section
+		align-items: baseline
+		margin: 0
+		height: 163px
+		min-height: auto
+		// margin-top: 15px
+		margin-bottom: 30px
+		.adv-section-content
+			width: 100%
+			background-color: transparent
+			margin: 0
+			padding: 0
+			height: 163px
+			.btn-more
+				margin: auto
+			.text
+				padding: 10px
+				padding-top: 15px
+				background-color: rgba(0,0,0, 0.2)
+				text-align: center
+				color: #fff						 					
 
 
 
