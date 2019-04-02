@@ -167,8 +167,23 @@
 	<section class="section catalog-section">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<h2 class="base-title">Керамическая черепица</h2>
+				<div class="col-12 catalog-head">
+					<div class="catalog-head-content col-9">
+						<div class="catalog-title">
+							<h2 class="base-title">Керамическая черепица</h2>
+							<span>415 товаров</span>
+						</div>
+						<div class="catalog-list">
+							<a href="#"><img src="img/list-1.svg"></a>
+							<a href="#"><img src="img/list-2.svg"></a>
+						</div>
+					</div>
+					<div class="catalog-popular col-3">
+						<select class="catalog-select">
+							<option>По популярности</option>
+							<option>По популярности1</option>
+						</select>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -263,30 +278,173 @@
 					<div class="catalog-sidebar">
 						<div class="sidebar-title">Найти по параметрам</div>
 						<div class="catalog-filter">
-
+							<div class="filter-new-items">
+								<label class="container"><p>Хит</p>
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container"><p>Новинка</p>
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+								<label class="container"><p>Скидка</p>
+									<input type="checkbox" checked="checked">
+									<span class="checkmark"></span>
+								</label>
+							</div>
 							<div class="masonry">
-								<label for="amount">Цена</label>
+								<label for="amount"><span class="price-unit">Цена</span> <span>за м<sup>2</sup></span><img src="img/grey.svg"> | <a href="#" class="filter-link">за шт.</a></label>
 									<div class="caption">
 										<span id="slider-range-value1"></span>
+										<div class="dash"></div>
 										<span id="slider-range-value2"></span>
 									</div>
 								<div id="test-slider"></div>
 							</div>
 
 							<div class="filter-section">
-								<div class="filter-title">Производитель</div>
-								<div class="filter-item custom-control custom-checkbox">
-									<label class="container">Roben
-										<input type="checkbox" checked="checked">
-										<span class="checkmark"></span>
-									</label>
+								<div class="filter-manufacturer">
+									<div class="filter-title">Производитель</div>
+									<div class="filter-item custom-control custom-checkbox">
+										<label class="container"><p>Roben</p>
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container disabled"><p>Ludowici</p>
+											<input type="checkbox" checked="checked" value="option3" disabled>
+											<span class="checkmark disabled"></span>
+										</label>
+										<label class="container"><p>Creaton</p>
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<a href="#" class="filter-link">+ ещё 5</a>
+									</div>
+								</div>
+								<div class="filter-form">
+									<div class="filter-title">Форма</div>
+									<div class="filter-item custom-control custom-checkbox">
+										<label class="container"><p>Плоская с замком</p>
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<label class="container disabled"><p>Волновая с замком</p>
+											<input type="checkbox" checked="checked" value="option3" disabled>
+											<span class="checkmark disabled"></span>
+										</label>
+										<label class="container"><p>Бобровый хвост</p>
+											<input type="checkbox" checked="checked">
+											<span class="checkmark"></span>
+										</label>
+										<a href="#" class="filter-link">+ ещё 5</a>
+									</div>
+								</div>
+								<div class="filter-color">
+									<div class="filter-title">Цвет</div>
+									<div class="color-content">
+										<a href="#"><div class="item-color item-white" data-toggle="tooltip" data-placement="top" title="Белый"></div></a>
+										<a href="#"><div class="item-color item-red" data-toggle="tooltip" data-placement="top" title="Красный"></div></a>
+										<a href="#"><div class="item-color item-brown" data-toggle="tooltip" data-placement="top" title="Коричневый"></div></a>
+										<a href="#"><div class="item-color item-beige" data-toggle="tooltip" data-placement="top" title="Бежевый"></div></a>
+										<a href="#"><div class="item-color item-green" data-toggle="tooltip" data-placement="top" title="Зелёный"></div></a>
+										<a href="#"><div class="item-color item-blue" data-toggle="tooltip" data-placement="top" title="Голубой"></div></a>
+										<a href="#"><div class="item-color item-white" data-toggle="tooltip" data-placement="top" title="Белый"></div></a>
+										<a href="#"><div class="item-color item-red" data-toggle="tooltip" data-placement="top" title="Красный"></div></a>
+										<a href="#"><div class="item-color item-brown" data-toggle="tooltip" data-placement="top" title="Коричневый"></div></a>
+									</div>
+								</div>
+								<div class="filter-more"><a href="#" class="filter-link">Ещё характеристики</a></div>
+								<div class="filter-button">
+									<a href="#" class="button filter-btn gray-button">Сбросить</a>
+									<a href="#" class="button filter-btn red-button">Применить</a>
 								</div>
 							</div>
 
 						</div> <!-- catalog filter -->
 					</div> <!-- catalog sidebar -->
+				</div>
+				<nav class="catalog-pagination col-9">
+					<div class="pagination-more"><a href="#">показать еще 50</a></div>
+					<div class="pagination">
+						<a href="#" class="pagination-prev"><img src="img/fill-red.svg" alt="prev">назад</a>
+						<div class="pagination-items">
+							<a class="pagination-item">1</a>
+							<a class="pagination-item">2</a>
+							<a class="pagination-item">3</a>
+							<a class="pagination-item">4</a>
+							<a class="pagination-item">5</a>
+							<a class="pagination-item">...</a>
+							<a class="pagination-item">55</a>
+						</div>
+						<a href="#" class="pagination-next">Вперед<img src="img/fill-red.svg" alt="next"></a>
+					</div>	
+					<div class="popular">
+						<p>Популярное в разделе:</p>
+						<a href="#">Красная керамическая черепица</a>
+						<a href="#">Черепица Creaton</a>
+						<a href="#">Натуральная черепица со скидкой</a>
+						<a href="#">...</a>
+					</div>			
+				</nav>
+			</div>
+		</div>
+	</section>
 
-
+	<section class="feedback-tile">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 feedback">
+					<div class="feedback-title">
+						<h2>отзывы о <span>керамической плитке</span></h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="feedback-slider">
+						<div class="feedback-item item">
+							<div class="feedback-item-head">
+								<div class="customer">
+									<p class="customer-name">Иванов Иван</p>
+									<div class="assessment">
+										<img src="img/red-star.svg" alt="star">
+										<img src="img/red-star.svg" alt="star">
+										<img src="img/red-star.svg" alt="star">
+										<img src="img/red-star.svg" alt="star">
+										<img src="img/white-star.svg" alt="star">
+									</div>
+								</div>
+								<div class="date"><p>15.11.18</p></div>
+							</div>
+							<div class="feedback-content">
+								<div class="product-description">
+									<div class="description-content">
+										<div class="model">
+											<span>Модель</span>
+											<p>Красная керамическая черепица</p>
+										</div>
+										<div class="advantages-product">
+											<div class="advantages">
+												<span>Достоинства</span>
+												<p>Много плюсов</p>
+											</div>
+											<div class="disadvantages">
+												<span>Недостатки</span>
+												<p>Нет</p>
+											</div>
+										</div>
+									</div>
+									<div class="description-image">
+										<img src="img/description-image.svg">
+									</div>
+								</div>
+								<div class="comments">
+									<span>Комментарий</span>
+									<p>Плитка понравилась. Продавец сразу предложила «топ пять» популярных коллекций, среди них была и наша беленькая Bella;) </p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
