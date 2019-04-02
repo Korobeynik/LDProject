@@ -17,6 +17,38 @@
 	border-radius: 3px
 	margin-left: 30px
 
+.catalog-head
+	padding: 0
+	display: flex
+	margin-bottom: 22px
+	.catalog-head-content
+		padding-right: 19px
+		display: flex
+		justify-content: space-between
+		.catalog-title
+			display: flex
+			.base-title
+				margin-bottom: 0
+	.catalog-popular
+		padding-left: 12px
+		.catalog-select
+			width: 100%
+			height: 40px
+			padding-left: 15px
+			outline: none
+			border-radius: 3px
+			border: 1px solid $gray
+	span
+		color: $red
+		font-weight: 600
+		font-size: 13px
+		margin-left: 11px
+		margin-top: 15px
+	.catalog-list
+		a
+			cursor: pointer
+		a:last-child
+			margin-left: 23px
 
 .caption
 	display: flex
@@ -30,19 +62,45 @@
 		color: #68757c !important
 		border-radius: 3px
 		min-width: 106px
+	.dash
+		width: 13px
+		height: 1px
+		background: $d-gray
+		margin: 21px 0
+
+.sidebar-title
+	font-size: 21px
+	font-weight: 600
 
 
 .masonry
 	margin-bottom: 28px
 	label
-		margin-bottom: 10px
+		margin-bottom: 14px
 		display: block
-		font-size: 14px
+		font-size: 17px
+		line-height: 28px
+		.price-unit
+			color: $text
+			margin-right: 10px
+		span
+			font-size: 15px
+			color: $d-gray
+			font-weight: 600
+		a
+			margin-left: 6px
+		img
+			fill: #68757c
+			position: relative
+			left: -23px
+			bottom: -14px
+			width: 7px
+			height: auto
 
 .masonry
 	width: 100%
 	label
-		color: #fff
+		color: $d-gray
 		font-weight: 500
 	.input-wrap
 		width: 100%	
@@ -90,8 +148,86 @@
 	background-color: #b3babd !important		
 
 
+.filter-new-items
+	display: flex
+	label.container
+		padding-right: 8px
+		padding-left: 30px
+		margin-top: 20px
+		margin-bottom: 26px
+		height: 25px
+		p
+			font-size: 15px
+			line-height: 23px
+			color: $text
 
-.filter-item
+.filter-section
+	.filter-manufacturer
+		margin-bottom: 26px
+	.filter-title
+		font-size: 15px
+		font-weight: 600
+		margin-bottom: 16px
+	.filter-item
+		a
+			text-transform: uppercase
+			letter-spacing: 0.5px
+	.filter-form
+		margin-bottom: 26px
+	.filter-color
+		margin-bottom: 20px
+		.filter-title
+			margin-bottom: 11px
+		.color-content
+			display: flex
+			flex-wrap: wrap
+			.item-color
+				width: 32px
+				height: 32px
+				border-radius: 50%
+				margin: 0 4.5px
+				margin-bottom: 10px
+			.item-white
+				background: $white
+				margin-left: 0
+			.item-red
+				background: $red
+			.item-brown
+				background: #754e4e
+			.item-beige
+				background: #e8ddbd
+			.item-green
+				background: #56bf5a
+			.item-blue
+				background: #376ecb
+
+	.filter-more
+		text-align: center
+		margin-bottom: 22px
+		a
+			text-transform: uppercase
+
+	.filter-button
+		display: flex
+		justify-content: center
+		.filter-btn
+			width: 120px
+			height: 40px
+			text-align: center
+			line-height: 40px
+			text-decoration: none
+			color: $white
+			border-radius: 3px
+			margin: 0 3.5px
+			transition: all 0.5s
+			&:hover
+				opacity: 0.8
+		.gray-button
+			background: #b3babd
+
+
+
+.filter-item, .filter-new-items
 	.container
 		display: block
 		position: relative
@@ -122,7 +258,7 @@
 		height: 20px
 		width: 20px
 		border-radius: 3px
-		background-color: #eee
+		background-color: $white
 
 
 	.container
@@ -130,6 +266,10 @@
 			background-color: #fff
 		input:checked ~ .checkmark
 			background-color: #fff
+		p
+			font-size: 15px
+			line-height: 23px
+			color: $text
 
 
 	.checkmark:after
@@ -149,4 +289,181 @@
 			border-width: 0 2px 2px 0
 			-webkit-transform: rotate(45deg)
 			-ms-transform: rotate(45deg)
-			transform: rotate(45deg)	
+			transform: rotate(45deg)
+
+.catalog-pagination
+	padding-left: 0
+	padding-right: 16px
+	.pagination-more
+		text-align: center
+		margin-bottom: 40px
+		a
+			font-size: 17px
+			font-weight: bold
+			letter-spacing: 0.7px
+			text-decoration: none
+			color: $text
+			text-transform: uppercase
+			border-bottom: 1px dashed $red
+	.pagination
+		display: flex
+		justify-content: space-between
+		margin-bottom: 34px
+		.pagination-prev, .pagination-next
+			width: 114px
+			height: 40px
+			background: $gray
+			text-align: center
+			line-height: 42px
+			border-radius: 3px
+			text-transform: uppercase
+			font-size: 13px
+			color: $text
+			text-decoration: none
+			letter-spacing: 0.5px
+			font-weight: 600
+			transition: all 0.5s
+			&:hover
+				opacity: 0.8
+
+		.pagination-prev
+			img
+				transform: rotate(180deg)
+				margin-right: 13px
+				margin-bottom: 3px
+		.pagination-next
+			img
+				margin-left: 13px
+				margin-bottom: 3px
+		.pagination-items
+			display: flex
+			.pagination-item
+				width: 40px
+				height: 40px
+				border-radius: 3px
+				background: $gray
+				text-align: center
+				line-height: 40px
+				margin: 0 6px
+				font-size: 15px
+				font-weight: 600
+				color: $text
+				transition: all 0.2s
+				cursor: pointer
+				&:hover
+					background: $red
+					color: $white
+				&:focus
+					background: $white
+					border: 2px solid $gray
+					color: $text
+	.popular
+		display: flex
+		a:last-child
+			margin-left: 0
+			margin-right: 0
+			color: $red
+		p
+			font-size: 15px
+			color: $d-gray
+			margin-left: 0
+			margin-right: 11px
+		a
+			margin: 0 11px
+			font-size: 15px
+			font-weight: 600
+			color: $text
+			text-decoration: none
+
+.feedback-tile
+	margin-bottom: 54px
+
+.feedback-title
+	margin-bottom: 28px
+	h2
+		font-size: 30px
+		font-weight: bold
+		line-height: 40px
+		text-transform: uppercase
+		margin-bottom: 0
+		span
+			color: $red
+.feedback-item
+	max-width: 599px
+	border: 2px solid $gray
+	border-radius: 3px
+	.feedback-item-head
+		display: flex
+		background: $gray
+		padding: 18px 22px 22px
+		justify-content: space-between 
+		.customer
+			display: flex
+			justify-content: space-between
+			.customer-name
+				margin-bottom: 0
+				margin-right: 35px
+				font-size: 15px
+				font-weight: 600
+				margin-top: 2px
+			.assessment
+				img
+
+		.date
+			p
+				margin-bottom: 0
+				margin-top: 2px
+				color: $light
+				font-size: 15px
+	.feedback-content
+		padding: 18px 22px 22px 
+		.product-description
+			display: flex
+			justify-content: space-between
+			span
+				font-size: 11px
+				color: $d-gray
+				margin-bottom: 6px
+			.description-content
+				width: 100%
+				.model
+					margin-bottom: 24px
+					p
+						font-size: 15px
+						font-weight: 600
+						color: $red
+						margin-bottom: 0
+		.advantages-product
+			display: flex
+			justify-content: space-between
+			margin-bottom: 23px
+			.advantages, .disadvantages
+				p
+					margin-bottom: 0
+					font-size: 15px
+					line-height: 23px
+		.comments
+			span
+				font-size: 11px
+				color: $d-gray
+				margin-bottom: 6px
+			p
+				margin-bottom: 0
+				font-size: 15px
+				line-height: 23px
+
+
+a.filter-link
+	color: $red
+	text-decoration: none
+	border-bottom: 1px dashed $red
+	font-weight: 600
+	cursor: pointer
+	&:hover
+		color: $red
+
+.disabled
+	p
+		color: #b3babd !important
+	&::after
+		border-color: #b3babd !important
