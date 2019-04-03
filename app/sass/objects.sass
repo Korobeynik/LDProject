@@ -1,0 +1,123 @@
+@import 'vars'
+
+
+.objects-content
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between 
+	.object-card
+		min-width: 288px
+		max-width: 288px
+		border-radius: 3px
+		box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+		transition: all 0.5s ease
+		background: $white
+		cursor: pointer
+		position: relative
+		margin-bottom: 24px
+		&:hover
+			.object-content
+				position: absolute
+				z-index: 2
+				box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+				border-radius: 0 0 3px 3px 
+			.object-more-block
+				display: block
+		.object-image
+			border-radius: 3px 3px 0 0
+			overflow: hidden
+			img
+				width: 100%
+				height: 100%
+	.object-content
+		padding: 21px 20px 36px
+		background: $white
+		.object-name
+			margin-bottom: 11px
+			p
+				margin-bottom: 0
+				font-size: 19px
+				font-weight: 600
+				line-height: 25px
+		.more
+			color: $red
+			text-decoration: none
+			font-size: 15px
+			letter-spacing: 0.6px
+			transition: all 0.3s ease
+			font-weight: bold
+			img
+				transition: all 0.3s ease
+			&:hover
+				img
+					transform: translateX(10px)
+	.object-more-block
+		display: none
+		margin-bottom: 13px
+		span
+			font-size: 15px
+			margin-bottom: 0px
+			color: $light
+		.object-brands
+			margin-bottom: 11px
+			.brands
+				font-size: 15px
+				line-height: 23px
+				color: $red
+				margin-bottom: 0
+		.objects-materials
+			p
+				font-size: 15px
+				line-height: 23px
+				color: $text
+				margin-bottom: 0
+
+
+
+.catalog-pagination-objects
+	margin-top: 16px
+	.pagination
+		justify-content: center
+	.pagination-items
+		margin: 0 51px 
+
+
+@media screen and (max-width: 892px)
+	.catalog-objects
+		h2
+			text-align: center
+	.objects-content
+		justify-content: center
+		.object-card
+			margin: 0 15px 24px
+/**/
+
+@media screen and (max-width: 665px)
+	.objects-content
+		.object-card
+			max-width: 100%
+			min-width: 100%
+			.object-content
+				min-width: 100%
+				box-shadow: none !important
+				position: relative !important
+				z-index: 0
+				.object-more-block
+					display: none
+/**/
+
+@media screen and (max-width: 480px)
+	.objects-content
+		.object-card
+			margin-bottom: 22px
+	.catalog-pagination-objects
+		padding: 0
+		margin-top: 13px
+	.pagination
+		.pagination-items
+			margin: 0 11%
+			a:nth-child(5)
+				display: none
+	.pagination-more
+		margin-bottom: 37px
+/**/
