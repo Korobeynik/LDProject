@@ -34,8 +34,332 @@
 .section-sidebar
 	min-width: 287px
 	width: 23%
-	background-color: #eff1f1
-	padding: 22px 17px
 	border-radius: 3px
-	margin-left: 30px
+	margin-left: 25px
 	align-self: baseline
+	.advertising
+		min-width: 288px
+		margin-bottom: 27px
+		.first-advertising, .second-advertising
+			min-height: 187px
+			padding-top: 14px
+			padding-left: 87px
+			background-size: cover
+			background-position: top left
+			.advertising-content
+				text-align: right
+				margin-right: 13px
+				padding: 0
+		.first-advertising
+			p
+				margin-bottom: 74px
+		.second-advertising
+			p
+				margin-bottom: 52px
+	.manufacturers-services
+		background: $gray
+		padding: 38px 29px 33px 33px
+		.service-item
+			margin-bottom: 0
+			min-height: 40px
+			margin-bottom: 28px
+			&:last-child
+				margin-bottom: 0
+			.s-title, .s-text
+				font-size: 15px
+				line-height: 22px
+
+.manufacturers-tabs
+	border: 1px solid $gray
+	padding: 13px 27px 22px
+	border-radius: 3px
+	background-color: $white
+	min-width: 100%
+	.cooperation-tabs
+		justify-content: flex-start
+		margin-bottom: 28px
+	.tab-content
+		margin-bottom: 24px
+	.more
+		color: $text
+		font-size: 13px
+		font-weight: 600
+		letter-spacing: 0.5px
+		border-bottom: 1px dashed $text
+		text-decoration: none
+	.manufacturers-product
+		display: flex
+		flex-direction: column
+		a
+			color: $text
+			line-height: 18px
+			text-decoration: underline
+			margin-bottom: 10px
+			font-size: 13px
+.manufacturers-select
+	display: none
+.nice-select
+	line-height: 31px
+	font-size: 13px
+	width: 100% !important
+	margin-bottom: 25px
+	border: solid 2px $gray
+	border-right: none
+	background: $gray
+	height: 36px
+	&::after
+		content: url('../img/share-icon.svg')
+		text-align: center
+		font-size: 15px
+		height: 36px
+		top: 2px
+		background: $red
+		border-radius: 0 3px 3px 0
+		cursor: pointer
+		border-left: none
+
+.manufacturers-content
+	margin-bottom: 36px
+	.more
+		display: none
+		color: $text
+		font-size: 13px
+		font-weight: 600
+		letter-spacing: 0.5px
+		border-bottom: 1px dashed $text
+		text-decoration: none
+	.manufacturers-logo
+		background: $white
+		padding: 17px 49px 33px
+		max-width: 288px 
+		border-radius: 3px
+		box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+		float: left 
+		margin-right: 24px
+		margin-bottom: 26px
+	p
+		font-size: 15px
+		line-height: 23px
+		color: $text
+		margin-bottom: 0
+		&:nth-child(2)
+			margin-bottom: 26px
+.contacts
+	margin-bottom: 78px
+.contacts-block
+	background-repeat: no-repeat !important
+	background-position: right 4% bottom !important
+	background-size: contain
+	background: $gray
+	display: flex
+	padding: 40px 9.5%
+	justify-content: space-between 
+	.contacts-number, .call-back, .contacts-email
+		display: flex
+		.contacts-image
+			background: $white
+			margin-right: 21px
+			width: 78px
+			height: 78px
+			border-radius: 50%
+			position: relative
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+		p
+			font-size: 21px 
+			font-weight: 600
+			margin-bottom: 0
+			line-height: 75px
+ul.brands-tabs
+	padding: 0 48px
+	margin-bottom: 30px
+	a
+		border-bottom: 1px dashed $text
+		text-decoration: none
+.brands-grid
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	.brand-card
+		background: $white
+		max-width: 183px
+		margin-bottom: 37px
+		.brand-logo
+			margin-bottom: 15px
+			width: 100%
+			overflow: hidden 
+			img
+				width: 100%
+				height: 100%
+		.brand-name
+			font-size: 15px
+			font-weight: 600
+			color: $text
+			margin-bottom: 0
+			padding-left: 4px
+.contacts-brands
+	margin-bottom: 73px
+	h2
+		margin-top: 20px
+
+
+@media screen and (max-width: 1050px)
+	.contacts-block
+		.contacts-number, .call-back, .contacts-email
+			p
+				font-size: 17px	
+/**/
+
+@media screen and (max-width: 992px)
+	.section-grid
+		flex-direction: column
+		.section-content
+			width: 100%
+			margin-bottom: 33px
+		.section-sidebar
+			width: 100%
+			margin-left: 0
+			display: flex
+			justify-content: center
+			.advertising
+				display: block
+			.manufacturers-services
+				margin-left: 20px
+/**/
+
+@media screen and (max-width: 923px)
+	.contacts-block
+		padding: 40px 5%
+
+/**/
+
+@media screen and (max-width: 768px)
+	.contacts-block
+		padding: 40px 5%
+		flex-direction: column
+		.contacts-number, .call-back, .contacts-email
+			justify-content: center
+			margin-bottom: 29px
+		.contacts-email
+			margin-bottom: 0
+	ul.brands-tabs
+		display: none
+	.manufacturers-select
+		display: block
+	
+/**/
+
+@media screen and (max-width: 610px)
+	.manufacturers-section
+		h2
+				margin-bottom: 8px
+	.section-grid
+		margin-bottom: 24px
+		.section-content
+			.manufacturers-content
+				.manufacturers-logo
+					float: none
+					margin: 0 auto 21px
+				p
+					margin-bottom: 16px
+				.more-text
+					display: none
+				a.more
+					display: block
+					width: 84px
+			.manufacturers-tabs
+				border: none
+				padding: 0
+				.manufacturers-select
+					margin-bottom: 15px
+					display: block
+				.more	
+					text-decoration: none
+					width: 84px
+				.cooperation-tabs, .tab-content
+					display: none
+					margin-bottom: 21px
+				div#tab1
+					display: block !important
+				.manufacturers-product
+					a:nth-child(6)
+						margin-bottom: 0
+		.section-sidebar
+			width: 100%
+			margin-left: 0
+			display: flex
+			justify-content: center
+			flex-direction: column
+			.manufacturers-services
+				margin-left: 0
+				margin-bottom: 0
+				.service-item
+					justify-content: center
+			.advertising
+				margin-bottom: 20px
+				.first-advertising
+					margin-bottom: 15px
+	.contacts
+		margin-bottom: 22px
+		h2
+			margin-bottom: 16px
+		.contacts-block
+			background-image: url('../img/message2.svg') !important
+			background-position: right 0 bottom !important
+			padding: 38px 0
+			.contacts-number, .call-back, .contacts-email
+				justify-content: center
+				p
+					line-height: 52px
+			.contacts-image
+				width: 48px
+				height: 48px
+				background: transparent
+				margin-left: 17px
+				margin-right: 25px
+	
+/**/
+
+@media screen and (max-width: 580px)
+	.brands-grid
+		justify-content: center
+
+/**/
+
+@media screen and (max-width: 480px)
+	.contacts	
+		.contacts-block
+			.contacts-number, .call-back, .contacts-email
+				justify-content: flex-start
+	.brands-grid
+		.brand-card
+			width: 139px
+			height: 79px
+			margin:
+				left: 5px
+				right: 5px
+				bottom: 12px
+			.brand-logo
+				border-radius: 3px
+				box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+				img
+					transform: scale(1.4)
+			.brand-name
+				display: none
+	.see-also-brands
+		margin-bottom: 27px
+		h2
+			margin-bottom: 14px
+
+/**/
+
+@media screen and (max-width: 329px)
+	.brands-grid
+		justify-content: space-between
+		.brand-card
+			margin-left: 0
+			margin-right: 0
+/**/

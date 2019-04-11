@@ -28,6 +28,9 @@
 		cursor: pointer
 		position: relative
 		margin-bottom: 24px
+		&:hover
+			.share-image::before
+				opacity: 0.5
 	.share-image
 		position: relative
 		border-radius: 3px 3px 0 0
@@ -35,6 +38,14 @@
 		img
 			width: 100%
 			height: 100%
+		&::before
+			content: ''
+			width: 100%
+			height: 100%
+			position: absolute
+			background: rgb(51, 51, 51)
+			transition: opacity 0.5s
+			opacity: 0
 	.share-name
 			margin-bottom: 19px
 			p
@@ -239,6 +250,12 @@
 			top: -70px
 .other-shares
 	margin-bottom: 26px
+
+.discount-price
+	color: $red
+	span
+		color: $red
+
 
 
 
