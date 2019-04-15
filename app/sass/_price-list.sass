@@ -1,27 +1,35 @@
 .priceList-section
+	h2
+		margin-bottom: 19px
 .priceList-wrap	
 	.cooperation-tabs
 		justify-content: flex-start
 		li
 			margin-right: 58px
+	.priceList-select
+		display: none
 .priceList-section-text
 	p
 		font-size: 15px
 		margin-bottom: 22px	
-
+		line-height: 23px
+.priceList-acordion-item.active
+	background: $gray
 .priceList-acordion-item
 	display: flex
 	flex-wrap: wrap
 	position: relative
 	width: 100%
+	border-bottom: 1px solid $gray
 	.priceList-acordion-title
 		width: 100%
 		color: #68757c
 		font-size: 17px
 		text-transform: uppercase
 		font-family: 'Proxima Nova Semibold'
-		font-weight: bold
-		padding: 18px 20px
+		font-weight: 600
+		padding: 27px 36.8px 27px 31px
+		letter-spacing: 0.7px
 		&:hover
 			cursor: pointer
 	&.active
@@ -32,27 +40,131 @@
 					fill: $red
 	.acordion-arrow
 		position: absolute
-		right: 20px
-		top: 15px	
+		right: 36.8px
+		top: 30px	
 
 
 .priceList-acordion-content
 	width: 100%
 	display: none
+	padding: 0 40px 36px 31px
+	.acordion-content:nth-child(odd)
+		background: $white
 
 .acordion-name
 	width: 60%
+	font-weight: 600
+	font-size: 15px
+.date, .size
+	font-size: 15px
+	line-height: 23px
+	color: $text
 .acordion-content-inner
 	width: 40%
 	justify-content: space-between	
 
 .priceList-acordion
 	border: solid 1px #eff1f1
+	margin-bottom: 33px
+	.priceList-acordion-item:last-child
+		border-bottom: none
+.priceList-paragraph
+	font-size: 15px
+	line-height: 23px
+	margin-bottom: 81px
+	img
+		margin-right: 10px
+
 
 .acordion-content
 	width: 100%
 	display: flex
-	padding: 20px 18px
+	padding: 18px 41px 18px 20px
+	color: $text
+	.download
+		color: $red
+		text-transform: uppercase
+		font-size: 15px
+		font-weight: 700
+		letter-spacing: 0.6px
+		cursor: pointer
+		text-decoration: none
+		img
+			margin-right: 14px
 
 .acordion-content-inner
-	display: flex				
+	display: flex			
+
+
+@media screen and (max-width: 880px)
+	.acordion-content
+		.download
+			img
+				margin-right: 0
+			span
+				display: none
+/**/
+
+@media screen and (max-width: 670px)
+	.priceList-wrap
+		.cooperation-tabs
+			display: none
+		.priceList-select
+			display: block
+	.priceList-acordion-content
+		padding: 0
+		.acordion-content-inner
+			justify-content: flex-end
+			position: relative
+			.date, .size
+				display: none
+			.watch-more
+				right: 24%
+			.download, .watch-more
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+/**/
+
+@media screen and (max-width: 480px)
+	.breadcrumbs-list
+		margin-bottom: 16px
+	.priceList-section
+		h2
+			margin-bottom: 9px
+	.priceList-section-text
+		p
+			font-size: 13px
+			margin-left: 10px
+		p:nth-child(2)
+			display: none
+	.priceList-select
+		margin-bottom: 20px
+	.priceList-acordion-container
+		padding: 0
+	.priceList-acordion-item
+		.acordion-arrow
+			top: 18px
+			right: 27px
+		.priceList-acordion-title
+			padding: 20px 27px 20px 20px
+			font-size: 15px
+		.acordion-content
+			padding-right: 24px
+			padding-top: 12px
+			padding-bottom: 12px
+			.acordion-name
+				width: 100%
+				font-size: 12px
+				font-weight: 600
+		.acordion-content-inner
+			.watch-more
+				right: 50%
+	.priceList-paragraph
+		margin-left: 17px
+		margin-bottom: 40px
+		font-size: 13px
+		line-height: 19px
+	.priceList-acordion
+		margin-bottom: 19px
+/**/
