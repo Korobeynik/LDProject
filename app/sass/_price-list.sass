@@ -1,0 +1,58 @@
+.priceList-section
+.priceList-wrap	
+	.cooperation-tabs
+		justify-content: flex-start
+		li
+			margin-right: 58px
+.priceList-section-text
+	p
+		font-size: 15px
+		margin-bottom: 22px	
+
+.priceList-acordion-item
+	display: flex
+	flex-wrap: wrap
+	position: relative
+	width: 100%
+	.priceList-acordion-title
+		width: 100%
+		color: #68757c
+		font-size: 17px
+		text-transform: uppercase
+		font-family: 'Proxima Nova Semibold'
+		font-weight: bold
+		padding: 18px 20px
+		&:hover
+			cursor: pointer
+	&.active
+		.acordion-arrow
+			transform: rotate(90deg)
+			svg
+				path
+					fill: $red
+	.acordion-arrow
+		position: absolute
+		right: 20px
+		top: 15px	
+
+
+.priceList-acordion-content
+	width: 100%
+	display: none
+
+.acordion-name
+	width: 60%
+.acordion-content-inner
+	width: 40%
+	justify-content: space-between	
+
+.priceList-acordion
+	border: solid 1px #eff1f1
+
+.acordion-content
+	width: 100%
+	display: flex
+	padding: 20px 18px
+
+.acordion-content-inner
+	display: flex				
