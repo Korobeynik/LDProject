@@ -135,6 +135,20 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
+  $('.switch-line').click(function(e) {
+    e.preventDefault();
+    $('.catalog-content .card').addClass('card-line');
+    $(this).addClass('active');
+     $('.switch-column').removeClass('active');
+  });
+
+   $('.switch-column').click(function(e) {
+    e.preventDefault();
+    $('.catalog-content .card').removeClass('card-line');
+    $(this).addClass('active');
+    $('.switch-line').removeClass('active');
+  });
+
  
   $('.priceList-acordion .priceList-acordion-title').click( function() {
     

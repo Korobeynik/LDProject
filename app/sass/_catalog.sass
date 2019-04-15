@@ -3,6 +3,9 @@
 	width: 100%
 	margin-bottom: 40px
 
+.catalog-list
+	margin-top: 5px
+
 .catalog-content
 	display: flex
 	width: 100%
@@ -14,7 +17,19 @@
 		max-width: 288px
 		position: relative
 		margin-bottom: 22px
-		display: none
+		// display: none
+		&.card-line
+			min-width: 100%
+			max-width: 100%
+			width: 100%
+			display: flex
+			flex-direction: row
+			.card-img-top
+				min-width: 280px
+				max-width: 280px
+			.card-more
+				display: block
+				position: static	
 		.card-more
 			background-color: #fff
 			position: absolute
@@ -100,6 +115,15 @@
 			&.hit
 				background-color: #56bf5a	
 
+.switch-column
+	&.active
+		#color1
+			fill: $red
+.switch-line
+	&.active
+		#color2
+			fill: $red
+
 .catalog-sidebar
 	min-width: 287px
 	background-color: #eff1f1
@@ -111,7 +135,7 @@
 .catalog-head
 	padding: 0
 	display: flex
-	margin-bottom: 22px
+	margin-bottom: 5px
 	.catalog-head-content
 		padding-right: 19px
 		display: flex
@@ -153,6 +177,8 @@
 	.catalog-list
 		a
 			cursor: pointer
+			&:hover
+				text-decoration: none
 		a:last-child
 			margin-left: 23px
 
