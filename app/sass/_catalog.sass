@@ -18,18 +18,108 @@
 		position: relative
 		margin-bottom: 22px
 		// display: none
+		.in-stock
+			display: none
+		.articul
+			display: none
+		.brand-list
+			display: none		
 		&.card-line
 			min-width: 100%
 			max-width: 100%
 			width: 100%
 			display: flex
 			flex-direction: row
+			height: 260px
+			padding: 20px
+			border-radius: 0px
+			margin-bottom: 0
+			box-shadow: none
+			border: solid 1px #eff1f1
+			position: relative
+			.brand-list
+				display: block
+				.brand-list-item
+					font-size: 11px
+					color: #333
+					span
+						text-transform: uppercase
+						font-weight: bold
+			.card-more-content
+				justify-content: flex-start
+				text-align: left
+			.in-stock
+				display: flex
+				font-size: 12px
+				position: absolute
+				right: 30px
+				top: 50px
+				align-items: center
+				font-weight: bold
+				i
+					width: 5px
+					height: 5px
+					background-color: green
+					border-radius: 50%
+					margin-right: 5px
+					display: inline-block
+			.brand
+				text-align: left
+				padding-top: 65px 
+				img
+					width: 120px
+					margin-top: 20px
+				.logo-text
+					display: none	
+			.base-btn
+				margin-right: 15px		
+			.card-body
+				padding-right: 10px
+			.card-title
+				position: absolute
+				width: 100%
+				max-width: 290px
+				left: 320px
+				top: 20px
+			.articul
+				display: block
+				position: absolute
+				left: 323px
+				top: 80px
+				color: #b3babd
+				font-size: 11px	
+			.card-price-list
+				padding-top: 40px
+			.rating-section
+				position: absolute
+				top: 20px
+				right: 30px
+				width: 25%
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				a
+					order: -1
+					display: inline-block
+					margin-right: 20px		
+			.label
+				display: none
+			.nice-select
+				display: none
 			.card-img-top
 				min-width: 280px
 				max-width: 280px
+				border-radius: 0px !important
+				order: -2
 			.card-more
 				display: block
-				position: static	
+				position: static
+				order: -1
+				box-shadow: none
+				border: none
+				background-color: transparent
+			.quick-view
+				display: none !important	
 		.card-more
 			background-color: #fff
 			position: absolute
