@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+	<title>Ладный Дом</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body id="is-cart">
+	<!-- Mobile menu -->
+	<div class="mobile-fixed-line">
+		<div class="menu-phone">
+			<div class="phone-image">
+				<img src="img/header-phone.svg" alt="Phone">
+			</div>
+			<div class="second-number">
+				<a href="tel:8 800 200-62-82" class="number">8 800 200-62-82</a>
+				<p>Бесплатно по России</p>
+			</div>
+		</div>
+		<div class="mobile-search">
+			<input type="text" placeholder="Поиск...">
+			<button></button>
+		</div>
+		<div class="mobile-compare">
+			<a href="#">
+				<img src="img/compare-mobile.svg" alt="">
+			</a>
+		</div>
+		<div class="mobile-cart">
+			<a href="#">
+				<img src="img/cart.svg" alt="">
+			</a>
+		</div>
+		<div class="humburger">
+			<img src="img/hamburger.svg" alt="">
+		</div>
+	</div>
+	<!-- Mobile menu -->
+	<header class="site-header">
+		<div class="container menu-container">
+			<div class="row">
+				<div class="header-menu col-12">
+					<div class="header-logo">
+						<a href="index.html">
+							<img class="base-logo" src="img/header-logo.svg" alt="Ладный Дом">
+							<img class="logo-fixed" src="img/small-logo.png" alt="">
+						</a>
+					</div>
+					<div class="header-menu-content">
+						<div class="top-menu">
+							<ul>
+								<li><a href="#">О нас <img src="img/red.svg"></a></li>
+								<li><a href="#">Наши объекты</a></li>
+								<li><a href="#">Акции</a></li>
+								<li><a href="#">Прайс-листы</a></li>
+								<li><a href="#">Сотрудничество <img src="img/red.svg"></a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Как купить <img src="img/red.svg"></a></li>
+							</ul>
+						</div>
+						<div class="main-menu">
+							<div class="menu-phone">
+								<div class="first-number">
+									<a href="tel:+78122488828" class="number">+7 (812) 248-88-28</a>
+									<a href="#">Санкт-Петербург <img src="img/red.svg"></a>
+								</div>
+								<div class="phone-image">
+									<a href="#" data-toggle="tooltip" data-placement="top" title="Обратный звонок">
+										<img src="img/header-phone.svg" alt="Phone">
+									</a>
+								</div>
+								<div class="second-number">
+									<p class="number">8 800 200-62-82</p>
+									<p>Бесплатно по России</p>
+								</div>
+							</div>
+							<div class="menu-search">
+								<input type="text" placeholder="Умный поиск" class="search">
+								<img src="img/search.svg" alt="Search">
+							</div>
+							<div class="menu-button">
+								<a href="#" class="header-button">
+									<span>Сравнение</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+										<g fill="none" fill-rule="evenodd">
+											<rect width="40" height="40" fill="#EFF1F1" rx="3" />
+											<g fill="#F01429" fill-rule="nonzero">
+												<path d="M25.25 29.111h-1.083V18.986h1.083zM22 29.111h-1.083v-18H22zM18.75 29.111h-1.083v-13.5h1.083zM15.5 29.111h-1.083V18.986H15.5z" />
+											</g>
+										</g>
+									</svg>
+								</a>
+								<a href="#" class="header-button basket">
+									<span class="cart-text">Корзина</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18">
+										<g fill="#F01429" fill-rule="nonzero">
+											<path d="M17.735 6.244c.347-.006.678.14.902.397.224.257.318.599.256.93l-1.448 7.527a1.15 1.15 0 0 1-1.158.922H3.921a1.15 1.15 0 0 1-1.158-.922L1.316 7.582a1.102 1.102 0 0 1 .25-.937c.225-.26.558-.407.908-.401h15.26zm0-1.125H2.474a2.345 2.345 0 0 0-1.81.798 2.204 2.204 0 0 0-.506 1.868l1.447 7.526c.209 1.078 1.187 1.853 2.316 1.834h12.366c1.13.019 2.107-.756 2.316-1.834l1.448-7.526a2.204 2.204 0 0 0-.506-1.868 2.345 2.345 0 0 0-1.81-.798z" />
+											<path d="M4.797 5.868a.59.59 0 0 1-.802.159.553.553 0 0 1-.163-.78L7.236.252A.59.59 0 0 1 8.04.093c.266.172.34.521.163.78L4.797 5.868zM16.307 5.247a.553.553 0 0 1-.163.78.59.59 0 0 1-.803-.159L11.937.873a.553.553 0 0 1 .163-.78.59.59 0 0 1 .803.159l3.404 4.995zM4.894 8.19c0-.31.259-.562.579-.562a.57.57 0 0 1 .579.562v5.738a.57.57 0 0 1-.58.562.57.57 0 0 1-.578-.563V8.19zM9.525 8.19c0-.31.26-.562.58-.562a.57.57 0 0 1 .578.562v5.738a.57.57 0 0 1-.579.562.57.57 0 0 1-.579-.563V8.19zM14.157 8.19c0-.31.259-.562.579-.562a.57.57 0 0 1 .579.562v5.738a.57.57 0 0 1-.58.562.57.57 0 0 1-.578-.563V8.19z" />
+										</g>
+									</svg>
+									<span class="cart-count">1</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-navigation">
+				<div class="container navigation-container">
+					<div class="row">
+						<nav class="navigation col-12">
+							<a href="#">Кровля</a>
+							<a href="#">Кирпич</a>
+							<a href="#">Брусчатка</a>
+							<a href="#">камень</a>
+							<a href="#">Фасады</a>
+							<a href="#">окна</a>
+							<a href="#">камины и дымоходы</a>
+							<a href="#">другие товары</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<ul class="breadcrumbs-list">
+							<li><a href="index.html">Ладный Дом</a></li>
+							<li><a href="index.html">Наши обьекты</a></li>
+							<li><a href="cart.html">Коттеджный поселок «Ландыши» </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section class="project-full">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 project-full-slider">
+						<div class="slider-item">
+							<h2 class="base-title">Коттеджный поселок «Ландыши»</h2>
+							<div class="slider-item-grid">
+								<div class="item-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus nisi delectus vero mollitia beatae dolores velit labore, architecto ut! Quis modi, facilis soluta labore beatae asperiores mollitia atque vero ad.</div>
+								<div class="item-gallery">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat impedit odit dicta doloremque quas consequuntur! Aspernatur obcaecati, eligendi, reiciendis minima, quibusdam placeat sit facilis tempore et voluptate animi ipsam tempora.</div>
+							</div>
+						</div><!-- slider-item -->
+					</div><!-- project-full-slider -->
+				</div><!-- row -->
+			</div><!-- container -->
+		</section>
+
+		<section class="see-also">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="base-title">Товары, используемые в проекте</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 bestsellers-slider owl-carousel">
+						<div class="card">
+							<img class="card-img-top" src="img/card.jpg" alt="Card image cap">
+							<div class="card-body">
+								<div class="card-title">Керамическая черепица Cobert, Delta/Duna, красный</div>
+								<div class="card-price-list">
+									<div class="card-price-item">
+										<div class="name">за м²</div>
+										<span class="line"></span>
+										<div class="price">1974.62 <span>руб.</span></div>
+									</div>
+									<div class="card-price-item">
+										<div class="name">за шт.</div>
+										<span class="line"></span>
+										<div class="price">188.02 <span>руб.</span></div>
+									</div>
+								</div>
+								<div class="card-links">
+									<a href="#" class="buy-link"><span>купить</span> в 1 клик</a>
+									<a href="#" class="price-spb">Цена для СПб</a>
+								</div>
+								<div class="buttons-wrap">
+									<a href="#" class="base-btn btn-card"><img src="img/card.svg" alt=""><span>В корзину</span></a>
+									<a href="#" class="btn-compare">
+										<img src="img/compare.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top" src="img/card.jpg" alt="Card image cap">
+							<div class="card-body">
+								<div class="card-title">Керамическая черепица Cobert, Delta/Duna, красный</div>
+								<div class="card-price-list">
+									<div class="card-price-item">
+										<div class="name">за м²</div>
+										<span class="line"></span>
+										<div class="price">1974.62 <span>руб.</span></div>
+									</div>
+									<div class="card-price-item">
+										<div class="name">за шт.</div>
+										<span class="line"></span>
+										<div class="price">188.02 <span>руб.</span></div>
+									</div>
+								</div>
+								<div class="card-links">
+									<a href="#" class="buy-link"><span>купить</span> в 1 клик</a>
+									<a href="#" class="price-spb">Цена для СПб</a>
+								</div>
+								<div class="buttons-wrap">
+									<a href="#" class="base-btn btn-card"><img src="img/card.svg" alt=""><span>В корзину</span></a>
+									<a href="#" class="btn-compare">
+										<img src="img/compare.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top" src="img/card.jpg" alt="Card image cap">
+							<div class="card-body">
+								<div class="card-title">Керамическая черепица Cobert, Delta/Duna, красный</div>
+								<div class="card-price-list">
+									<div class="card-price-item">
+										<div class="name">за м²</div>
+										<span class="line"></span>
+										<div class="price">1974.62 <span>руб.</span></div>
+									</div>
+									<div class="card-price-item">
+										<div class="name">за шт.</div>
+										<span class="line"></span>
+										<div class="price">188.02 <span>руб.</span></div>
+									</div>
+								</div>
+								<div class="card-links">
+									<a href="#" class="buy-link"><span>купить</span> в 1 клик</a>
+									<a href="#" class="price-spb">Цена для СПб</a>
+								</div>
+								<div class="buttons-wrap">
+									<a href="#" class="base-btn btn-card"><img src="img/card.svg" alt=""><span>В корзину</span></a>
+									<a href="#" class="btn-compare">
+										<img src="img/compare.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<img class="card-img-top" src="img/card.jpg" alt="Card image cap">
+							<div class="card-body">
+								<div class="card-title">Керамическая черепица Cobert, Delta/Duna, красный</div>
+								<div class="card-price-list">
+									<div class="card-price-item">
+										<div class="name">за м²</div>
+										<span class="line"></span>
+										<div class="price">1974.62 <span>руб.</span></div>
+									</div>
+									<div class="card-price-item">
+										<div class="name">за шт.</div>
+										<span class="line"></span>
+										<div class="price">188.02 <span>руб.</span></div>
+									</div>
+								</div>
+								<div class="card-links">
+									<a href="#" class="buy-link"><span>купить</span> в 1 клик</a>
+									<a href="#" class="price-spb">Цена для СПб</a>
+								</div>
+								<div class="buttons-wrap">
+									<a href="#" class="base-btn btn-card"><img src="img/card.svg" alt=""><span>В корзину</span></a>
+									<a href="#" class="btn-compare">
+										<img src="img/compare.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-top">
+					<ul class="social-red">
+						<li><a href="#" class="instagram"></a></li>
+						<li><a href="#" class="facebook"></a></li>
+						<li class="logo-mobile"><a href="#"><img src="img/footer-top-logo.svg" alt=""></a></li>
+						<li><a href="#" class="vc"></a></li>
+						<li><a href="#" class="youtube"></a></li>
+					</ul>
+				</div>
+				<div class="footer-nav">
+					<div class="footer-nav-links">
+						<a href="/"><img src="img/footer-logo.svg" alt=""></a>
+						<ul class="social-red">
+							<li><a href="#" class="instagram"></a></li>
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="vc"></a></li>
+							<li><a href="#" class="youtube"></a></li>
+						</ul>
+						<div class="footer-nav-title">Поделиться в соц.сетях</div>
+						<ul class="social-share">
+							<li><a href="#" class="skype"></a></li>
+							<li><a href="#" class="ok"></a></li>
+							<li><a href="#" class="facebook"></a></li>
+							<li><a href="#" class="vk"></a></li>
+							<li><a href="#" class="whatsapp"></a></li>
+							<li><a href="#" class="telegram"></a></li>
+						</ul>
+					</div>
+					<div class="catalog">
+						<div class="footer-nav-title">Каталог продукции</div>
+						<div class="footer-nav-title mobile">Каталог</div>
+						<div class="catalog-wrap">
+							<ul class="catalog-nav first">
+								<li><a href="#">Кровельные материалы</a></li>
+								<li><a href="#">Кирпич</a></li>
+								<li><a href="#">Камень</a></li>
+								<li><a href="#">Фасады</a></li>
+								<li><a href="#">Окна</a></li>
+								<li><a href="#">Камины и дымоходы</a></li>
+							</ul>
+							<ul class="catalog-nav">
+								<li><a href="#">Кровельные материалы</a></li>
+								<li><a href="#">Кирпич</a></li>
+								<li><a href="#">Камень</a></li>
+								<li><a href="#">Фасады</a></li>
+								<li><a href="#">Окна</a></li>
+								<li><a href="#" class="catalog-nav-all-item">Смотреть все</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-menu-nav">
+						<div class="footer-nav-title">О компании</div>
+						<ul>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Наши объекты</a></li>
+							<li><a href="#">Акции</a></li>
+							<li><a href="#">Архитекторам</a></li>
+							<li><a href="#">Строителям</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<div class="contacts-mobile">
+						<div class="contacts-title">Офис</div>
+						<p class="contacts-aderss">Санкт-Петербург, ул. Введенский канал, д.7, оф.107</p>
+						<div class="contact-links">
+							<a href="tel:+7 (812) 248-88-28">+7 (812) 248-88-28</a>
+							<a href="mailto:info@ladnydom.ru">info@ladnydom.ru</a>
+						</div>
+					</div>
+					<div class="buyers">
+						<div class="footer-nav-title">Покупателям</div>
+						<ul>
+							<li><a href="#">Прайс-листы</a></li>
+							<li><a href="#">Как купить</a></li>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Дилерам</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row contacts">
+					<div class="col-2">
+						<div class="contacts-title">Офис</div>
+						<p class="contacts-aderss">Санкт-Петербург, ул. Введенский канал, д.7, оф.107</p>
+						<div class="contact-links">
+							<a href="tel:+7 (812) 248-88-28">+7 (812) 248-88-28</a>
+							<a href="mailto:info@ladnydom.ru">info@ladnydom.ru</a>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="contacts-title">Склад</div>
+						<p class="contacts-aderss">Ленинградская обл., Ломоносовский р-н, пос. Новоселье, Красносельское шоссе, 1</p>
+						<div class="contact-links">
+							<a href="tel:+7 (921) 414-12-50">+7 (921) 414-12-50</a>
+							<a href="mailto:info@ladnydom.ru">info@ladnydom.ru</a>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="contacts-title">Москва</div>
+						<p class="contacts-aderss">Нижний Сусальный пер., д. 5, стр. 18, этаж 2, офис 10</p>
+						<div class="contact-links">
+							<a href="tel:+7 (495) 539-59-69">+7 (495) 539-59-69</a>
+							<a href="moskva@ladnydom.ru">moskva@ladnydom.ru</a>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="contacts-title">Краснодар</div>
+						<p class="contacts-aderss">Краснодар, ул. Шоссе Нефтяников, д. 1</p>
+						<div class="contact-links">
+							<a href="tel:+7 (861) 201-16-01">+7 (861) 201-16-01</a>
+							<a href="krasnodar@ladnydom.ru">krasnodar@ladnydom.ru</a>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="contacts-title">Казань</div>
+						<p class="contacts-aderss">Казань, Адмиралтейская, д. 3, пом. 1037, БЦ «Петрушкин двор»</p>
+						<div class="contact-links">
+							<a href="tel:+7 (843) 224-3-224">+7 (843) 224-3-224</a>
+							<a href="kozan@ladnydom.ru">kozan@ladnydom.ru</a>
+						</div>
+					</div>
+					<div class="col-2">
+						<div class="contacts-title">Ростов-на-Дону</div>
+						<p class="contacts-aderss">Ростов-на-Дону, ул. Социалистическая, д. 3/8</p>
+						<div class="contact-links">
+							<a href="tel:+7 (863) 210-22-02">+7 (863) 210-22-02</a>
+							<a href="kozan@ladnydom.ru">rnd@ladnydom.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="all-contacts">
+					<a href="#" class="more"><span>все отделения</span> <img src="img/fill-red.svg"></a>
+				</div>
+				<div class="soc-mobile">
+					<div class="footer-nav-title">Поделиться в соц.сетях</div>
+					<ul class="social-share">
+						<li><a href="#" class="skype"></a></li>
+						<li><a href="#" class="ok"></a></li>
+						<li><a href="#" class="facebook"></a></li>
+						<li><a href="#" class="vk"></a></li>
+						<li><a href="#" class="whatsapp"></a></li>
+						<li><a href="#" class="telegram"></a></li>
+					</ul>
+				</div>
+				<div class="footer-bottom">
+					<div class="copyright">Copyright © ООО «Ладный Дом Компани», 2000 — 2019</div>
+					<div class="payments">
+						<img src="img/payments.png" alt="">
+					</div>
+					<div class="footer-bottom-links">
+						<a href="#">Политика конфиденциальности</a>
+						<a href="#">Правовая информация</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/scripts.min.js"></script>
+	</body>
+
+	</html>
