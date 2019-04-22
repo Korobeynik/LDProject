@@ -135,6 +135,14 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
+
+  $('.objects-more').click( function(e) {
+    e.preventDefault();
+    $(this).closest('.object-description').find('p').not(':first').slideToggle();
+  });
+
+  //$(element).is(":visible"); 
+
   $('.switch-line').click(function(e) {
     e.preventDefault();
     $('.catalog-content .card').addClass('card-line');
@@ -285,6 +293,54 @@ $(document).ready(function(){
         }
     }
 	});
+
+  $(".project-full-slider").owlCarousel({
+    items: 1,
+    loop:true,
+    // animateOut: 'fadeOut',
+    // animateIn: 'fadeIn',
+    margin: 0,
+    nav: true,
+    dots: true,
+    smartSpeed: 700,
+    center: true
+    // responsive: {
+    //  0: {
+    //    items: 1
+    //  }
+    // }
+  }).on('initialized.owl.carousel', function() {
+    let titlePrev = $('.project-full-slider .owl-item.center').prev().find('.base-title').text();
+    let titleNext = $('.project-full-slider .owl-item.center').next().find('.base-title').text();
+    $('.slider-title-prev').text(titlePrev);
+    $('.slider-title-next').text(titleNext);
+  }).on('translated.owl.carousel', function() {
+    let titlePrev = $('.project-full-slider .owl-item.center').prev().find('.base-title').text();
+    let titleNext = $('.project-full-slider .owl-item.center').next().find('.base-title').text();
+    $('.slider-title-prev').text(titlePrev);
+    $('.slider-title-next').text(titleNext);
+  });
+
+  $('.next-wrap').click(function() {
+    $('.project-full-slider button.owl-next').trigger('click');
+  });
+
+  $('.prev-wrap').click(function() {
+    $('.project-full-slider button.owl-prev').trigger('click');
+  });
+
+  $(".gallery-popup").owlCarousel({
+    loop: true,
+    items: 1,
+    thumbs: true,
+    margin: -1,
+    thumbImage: true,
+    thumbContainerClass: 'owl-thumbs',
+    thumbItemClass: 'owl-thumb-item',
+    nav: true,
+    navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <circle cx="18" cy="18" r="18" stroke="#EFF1F1" stroke-width="2"/> <path fill="#000" d="M20.23 13.16a.537.537 0 0 0-.766 0 .541.541 0 0 0 0 .76l3.881 3.88H10.537a.541.541 0 0 0 0 1.081h12.808l-3.881 3.873a.55.55 0 0 0 0 .765.537.537 0 0 0 .765 0l4.8-4.8a.525.525 0 0 0 0-.756l-4.8-4.802z"/> </g> </svg>','<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <circle cx="18" cy="18" r="18" stroke="#EFF1F1" stroke-width="2"/> <path fill="#000" d="M20.23 13.16a.537.537 0 0 0-.766 0 .541.541 0 0 0 0 .76l3.881 3.88H10.537a.541.541 0 0 0 0 1.081h12.808l-3.881 3.873a.55.55 0 0 0 0 .765.537.537 0 0 0 .765 0l4.8-4.8a.525.525 0 0 0 0-.756l-4.8-4.802z"/> </g> </svg>'],
+    responsiveClass: true
+  });
 
 	$(".objects-slider").owlCarousel({
   	items: 1,

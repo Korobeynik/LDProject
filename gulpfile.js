@@ -39,6 +39,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/owlCarousel/owl.carousel.min.js',
+		'app/libs/owlCarousel/owl.carousel2.thumbs.js',
 		'app/libs/bootstrap/bootstrap.bundle.min.js',
 		'app/libs/niceSelect/jquery.nice-select.js',
 		'app/libs/magnific/jquery.magnific-popup.min.js',
