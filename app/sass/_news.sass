@@ -1,0 +1,56 @@
+.news-content
+	.news-card
+		.news-block-content
+			padding: 21px 21px 36px 21px
+			.news-name
+				margin-bottom: 7px
+			.news-description
+				font-size: 15px
+				line-height: 23px
+			.news-more-block
+				margin-bottom: 21px
+				p
+					font-size: 15px
+			.news-card-more
+				display: flex
+				justify-content: space-between
+				.news-date
+					p
+						font-size: 13px
+						font-weight: 600
+						letter-spacing: 0.5px
+						margin-bottom: 0
+		&:hover
+			.news-block-content
+				padding-bottom: 27px
+				.news-name
+					margin-bottom: 17px
+				.news-description
+					display: none
+				.news-card-more
+					.news-date
+						p
+							font-size: 15px
+							color: $light
+						span
+							display: none
+
+@media screen and (max-width: 665px)
+	.news-content
+		.news-card
+			.news-block-content
+				padding-bottom: 27px
+			&:hover
+				.news-block-content
+					.news-name
+						margin-bottom: 7px
+					.news-description
+						display: block
+					.news-card-more
+						.news-date
+							p
+								color: $text
+								font-size: 13px
+							span
+								display: inline-block
+/**/

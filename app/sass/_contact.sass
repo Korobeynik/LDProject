@@ -14,3 +14,402 @@
 	top: 0
 	left: 0
 	z-index: 1
+
+.contacts-head
+	display: flex 
+	justify-content: space-between
+	h2
+		margin-bottom: 57px
+		font-weight: bold
+	.print-block
+		a
+			font-size: 21px 
+			font-weight: 600
+			color: $text
+			text-decoration: underline
+		img
+			margin-left: 18px
+
+.office-block
+	margin-bottom: 74px
+	display: flex
+.office-download-m
+	display: none
+.office-content
+	width: 37.64%
+	border: 2px solid #edf3fa
+	padding: 22px 48px 20px 43px
+	.office-name
+		margin-bottom: 15px
+		display: flex
+		justify-content: space-between
+		h2
+			font-size: 27px
+			line-height: 30px
+			margin-bottom: 0
+		.office-download
+			img
+				margin-left: 4px
+	.office-address
+		p
+			margin-bottom: 11px
+			font-size: 15px
+			line-height: 23px
+			color: $text
+	.office-contacts, .office-information
+		display: flex
+		justify-content: flex-start
+		p
+			font-size: 15px
+			line-height: 23px
+			margin-bottom: 17px
+	.office-contacts
+		p
+			margin-right: 22%
+	.office-information
+		.work-time
+			margin-right: 15%
+	.office-information
+		p
+			margin-bottom: 15px
+	span
+		font-size: 15px
+		line-height: 21px
+		color: #8e9da7
+		display: block
+	.devider
+		height: 2px
+		width: 279px
+		background: #edf3fa
+		margin-bottom: 15px
+	.long-devider
+		width: 326px
+		margin-bottom: 13px
+	.office-messengers
+		h2
+			font-size: 18px
+			line-height: 30px
+			font-weight: 700
+			margin-bottom: 14px
+		.messengers-block
+			display: flex 
+			flex-wrap: wrap 
+			.messenger-block
+				flex-basis: 50%
+				display: flex
+				margin-bottom: 10px
+				img
+					margin-right: 10px
+					width: 27px
+					height: auto
+				a
+					display: block
+					font-size: 13px
+					color: $red
+					line-height: 17px
+					margin-bottom: 0
+				span
+					font-size: 11px
+					line-height: 17px
+					display: block
+.office-link
+	font-size: 14px
+	color: $red
+	line-height: 23px
+	text-decoration: underline
+	&:hover
+		color: $red
+
+.office-map
+	max-width: 733px
+	margin-left: 35px
+	.office-map-block
+		margin-bottom: 20px
+		img
+			width: 100%
+	.office-slider
+		position: relative
+		width: 85%
+		margin: 0 auto
+		.owl-item.active
+			width: 92px
+
+		.owl-nav
+			display: flex
+			.owl-prev, .owl-next
+				position: absolute
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				display: block
+				outline: none
+				transition: all 0.5s
+				border: none !important
+				&:hover
+					border: none !important
+					background-color: transparent
+					svg
+						path
+							fill: $red
+				
+		.owl-prev
+			left: -120px
+			top: 34px
+			svg
+				transform: rotate(-180deg)
+		.owl-next
+			right: -618px
+			top: 34px
+		.office-item
+			width: 92.7px
+			height: 93.2px
+			background: $gray
+			margin-right: 0
+.stock-block
+	.office-content
+		max-height: 380px
+		.office-name
+			margin-bottom: 25px
+		.office-address
+			p
+				margin-bottom: 21px
+		.office-contacts
+			p
+				margin-bottom: 26px
+		.devider
+			margin-bottom: 25px
+
+.requisites
+	margin-bottom: 86px
+	display: flex
+	justify-content: space-between
+	.requisites-block
+		h2
+			font-size: 27px
+			margin-bottom: 37px
+			text-transform: capitalize
+			font-weight: 700
+			line-height: 30px
+		.company-name
+			span
+				font-size: 15px
+				line-height: 21px
+				color: #8e9da7
+			p
+				font-size: 15px
+				line-height: 23px
+				margin-bottom: 0
+	.download-requisites
+		border: 2px solid #edf3fa
+		padding: 30px 32px
+		display: flex
+		img
+			margin-right: 34px
+		a
+			margin: auto
+			display: block
+			text-decoration: underline
+			color: $text
+			font-size: 21px
+			font-weight: 600
+.region-name
+	text-transform: capitalize
+.region-title
+	font-size: 21px
+	display: none
+	line-height: 30px
+.region-grid
+	.region-row
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 100%
+		border-bottom: 1px solid #edf3fa
+		margin-bottom: 13px
+		&:last-child
+			border-bottom: none
+			max-width: 100%
+
+		.regioin-card
+			font-size: 15px
+			line-height: 23px
+			margin-bottom: 18px
+			a
+				display: block
+
+			.region-card-name
+				display: block
+				margin-bottom: 9px
+				color: #021026
+				&:hover
+					font-weight: bold
+					text-decoration: underline
+				&:active
+					font-weight: bold
+					text-decoration: underline
+			.region-number
+				color: #8e9da7
+				margin-bottom: 3px
+			.region-email
+				margin-bottom: 16px
+
+
+
+@media screen and (max-width: 1200px)
+	.office-block
+		flex-direction: column
+		.office-content
+			width: 63.5%
+			margin-bottom: 56px
+			margin-left: auto
+			margin-right: auto
+		.office-map
+			width: 100%
+			margin: 0 auto
+/**/
+
+@media screen and (max-width: 1080px)
+	.requisites
+		flex-direction: column
+		.requisites-block
+			text-align: center
+			.company-name
+				p
+					margin-bottom: 25px
+		.download-requisites
+			max-width: 348px
+			margin: 0 auto
+/**/
+
+@media screen and (max-width: 768px)
+	ul.cooperation-tabs
+		display: none
+	.office-block
+		.office-content
+			width: 100% !important
+/**/
+
+
+@media screen and (max-width: 480px)
+	.contact-section
+		.manufacturers-select
+			margin-bottom: 16px
+	.contacts-head
+		h2
+			width: 100%
+			margin-bottom: 23px
+		.print-block
+			display: none
+	.office-block
+		margin-bottom: 43px
+		.office-content
+			padding: 23px 20px 20px 20px
+			margin-bottom: 15px !important
+			.devider, .devider-long
+				width: 240px
+			.office-name
+				h2
+					font-size: 21px
+				.office-download
+					display: none
+			.office-address
+				span
+					margin-bottom: 3px
+					font-size: 13px
+				p
+					margin-bottom: 18px
+					font-size: 13px
+			.office-contacts
+				justify-content: flex-start
+				p
+					font-size: 13px
+					margin-right: 13%
+				.office-link
+					margin-left: 0
+					font-size: 13px
+
+			.office-information
+				justify-content: flex-start
+				.work-time
+					margin-right: 11%
+				p
+					margin-bottom: 22px
+					font-size: 13px
+					line-height: 19px
+				span
+					font-size: 13px
+					margin-bottom: 1px
+			.office-messengers
+				h2
+					margin-bottom: 18px
+				.messengers-block
+					flex-direction: column	
+
+		.office-download-m
+			display: block
+			text-align: center
+			margin-bottom: 18px
+		.office-slider-wrap
+			width: 100%
+		.office-slider
+			.owl-item, .owl-item.active
+				width: 62px !important
+			.owl-nav
+				display: flex
+			.office-item
+				width: 62px
+				height: 62px
+
+	.requisites
+		margin-bottom: 30px
+		.requisites-block
+			text-align: left
+			margin-left: 12px
+			h2
+				text-align: left
+				margin-bottom: 21px
+				font-size: 21px
+			.company-name
+				span
+					display: none
+				p
+					font-size: 13px
+					line-height: 21px
+		.download-requisites
+			padding: 18px 24px
+			width: 100%
+			img
+				margin-right: 25px
+			a
+				font-size: 17px
+	.region-grid
+		.region-row
+			border-bottom: none
+			.regioin-card
+				border-bottom: 1px solid #edf3fa
+				//flex-basis: 50%
+				margin-bottom: 8px
+				.region-card-name
+					margin-bottom: 0
+				.region-number
+					margin-bottom: 12px
+				.region-email
+					display: none
+	.region-title
+		display: block
+	.region-office, .region-name
+		display: none
+	.stock-block
+		.office-content
+			.office-name
+				margin-bottom: 14px
+			.office-information
+				p
+					line-height: 19px
+				.work-time
+					p
+						margin-bottom: 15px
+			.office-address
+				p
+					line-height: 19px
+/**/
