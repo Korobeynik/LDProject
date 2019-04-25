@@ -255,16 +255,18 @@
 									<img src="img/download-copy.svg">
 								</div>
 								<div class="office-map">
-									<div class="office-map-block">
-										<img src="img/test-map.png" alt="map">
+									<div class="office-map-block" id="map">
+										<img src="img/test-map2.png">
 									</div>
-									<div class="office-slider owl-carousel">
-										<div class="office-item"></div>
-										<div class="office-item"></div>
-										<div class="office-item"></div>
-										<div class="office-item"></div>
-										<div class="office-item"></div>
-										<div class="office-item"></div>
+									<div class="office-slider-block">
+										<div class="office-slider owl-carousel">
+											<div class="office-item"></div>
+											<div class="office-item"></div>
+											<div class="office-item"></div>
+											<div class="office-item"></div>
+											<div class="office-item"></div>
+											<div class="office-item"></div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -310,7 +312,7 @@
 								</div>
 								<div class="office-map">
 									<div class="office-map-block">
-										<img src="img/test-map2.png" alt="map">
+										<img src="img/test-map2.png">
 									</div>
 									<div class="office-slider-block">
 										<div class="office-slider owl-carousel">
@@ -915,11 +917,11 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="region-grid">
-								<div class="region-row">
+							
 									<div class="regioin-card">
-										<a href="#" class="region-card-name">Владимир</a>
-										<a href="#" class="region-number">+7 (920) 910-99-36</a>
-										<a href="#" class="region-email office-link">vladimir@ladnydom.ru</a>
+										<a href="#" class="region-card-name active">Владимир</a>
+										<a href="tel:9209109936" class="region-number">+7 (920) 910-99-36</a>
+										<a href="mailto:vladimir@ladnydom.ru" class="region-email office-link">vladimir@ladnydom.ru</a>
 									</div>
 									<div class="regioin-card">
 										<a href="#" class="region-card-name">Екатеринбург</a>
@@ -941,8 +943,8 @@
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
 										<a href="#" class="region-email office-link">vladimir@ladnydom.ru</a>
 									</div>
-								</div>
-								<div class="region-row">
+						
+						
 									<div class="regioin-card">
 										<a href="#" class="region-card-name">Псков</a>
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
@@ -968,8 +970,8 @@
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
 										<a href="#" class="region-email office-link">vladimir@ladnydom.ru</a>
 									</div>
-								</div>
-								<div class="region-row">
+	
+				
 									<div class="regioin-card">
 										<a href="#" class="region-card-name">Набережные Челны</a>
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
@@ -995,8 +997,8 @@
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
 										<a href="#" class="region-email office-link">vladimir@ladnydom.ru</a>
 									</div>
-								</div>
-								<div class="region-row">
+					
+						
 									<div class="regioin-card">
 										<a href="#" class="region-card-name">Красноярск</a>
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
@@ -1007,13 +1009,13 @@
 										<a href="#" class="region-number">+7 (920) 910-99-36</a>
 										<a href="#" class="region-email office-link">vladimir@ladnydom.ru</a>
 									</div>
-								</div>
+						
 							</div>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-12">
-							<h2 class="base-title region-name">Владимир</h2>
+							<h2 class="base-title region-name region-tab-name">Владимир</h2>
 						</div>
 					</div>
 					<div class="row">
@@ -1292,5 +1294,190 @@
 		<script>
 		</script>
 	</body>
+
+	<script>
+
+		let map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: {lat: 59.930790, lng: 30.351090},
+            zoom: 14,
+            disableDefaultUI: !0,
+            styles: [
+							  {
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#f5f5f5"
+							      }
+							    ]
+							  },
+							  {
+							    "elementType": "labels.icon",
+							    "stylers": [
+							      {
+							        "visibility": "off"
+							      }
+							    ]
+							  },
+							  {
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#616161"
+							      }
+							    ]
+							  },
+							  {
+							    "elementType": "labels.text.stroke",
+							    "stylers": [
+							      {
+							        "color": "#f5f5f5"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "administrative.land_parcel",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#bdbdbd"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#eeeeee"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#757575"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi.park",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#e5e5e5"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "poi.park",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#9e9e9e"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#ffffff"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.arterial",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#757575"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.highway",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#dadada"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.highway",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#616161"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "road.local",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#9e9e9e"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "transit.line",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#e5e5e5"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "transit.station",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#eeeeee"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "water",
+							    "elementType": "geometry",
+							    "stylers": [
+							      {
+							        "color": "#c9c9c9"
+							      }
+							    ]
+							  },
+							  {
+							    "featureType": "water",
+							    "elementType": "labels.text.fill",
+							    "stylers": [
+							      {
+							        "color": "#9e9e9e"
+							      }
+							    ]
+							  }
+							]
+        });
+
+        let icon = {
+	        url: "/img/map-icon.svg", // url
+	        scaledSize: new google.maps.Size(50, 50), // size
+	    	};
+
+        new google.maps.Marker({
+            position: {lat: 59.930790, lng: 30.351090},
+            map: map,
+            icon: icon,
+            title: 'MAP'
+        })
+    }</script>
+	<script async defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1FvL6FvTiAZ60od_ltiuRTge691HLCjk&callback=initMap"></script>
 
 	</html>

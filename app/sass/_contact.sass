@@ -4,7 +4,6 @@
 	position: relative
 
 #map
-	height: 100%
 	position: relative
 
 .contacts-map 
@@ -43,6 +42,8 @@
 		margin-bottom: 15px
 		display: flex
 		justify-content: space-between
+		font-weight: bold
+		font-family: 'Proxima Nova Bold'
 		h2
 			font-size: 27px
 			line-height: 30px
@@ -91,6 +92,7 @@
 			line-height: 30px
 			font-weight: 700
 			margin-bottom: 14px
+			font-family: 'Proxima Nova Bold'
 		.messengers-block
 			display: flex 
 			flex-wrap: wrap 
@@ -125,8 +127,11 @@
 	margin-left: 35px
 	.office-map-block
 		margin-bottom: 20px
+		height: 355px
+		position: relative
 		img
 			width: 100%
+			height: 100%
 	.office-slider
 		position: relative
 		width: 85%
@@ -219,6 +224,8 @@
 	display: none
 	line-height: 30px
 .region-grid
+	display: flex
+	flex-wrap: wrap
 	.region-row
 		display: flex
 		flex-wrap: wrap
@@ -229,29 +236,34 @@
 		&:last-child
 			border-bottom: none
 			max-width: 100%
-
-		.regioin-card
-			font-size: 15px
-			line-height: 23px
-			margin-bottom: 18px
-			a
-				display: block
-
-			.region-card-name
-				display: block
-				margin-bottom: 9px
-				color: #021026
-				&:hover
-					font-weight: bold
-					text-decoration: underline
-				&:active
-					font-weight: bold
-					text-decoration: underline
-			.region-number
-				color: #8e9da7
-				margin-bottom: 3px
-			.region-email
-				margin-bottom: 16px
+			justify-content: flex-start
+			.regioin-card
+				width: 22.5%
+	.regioin-card
+		font-size: 15px
+		line-height: 23px
+		margin-bottom: 18px
+		width: 20%
+		border-bottom: 1px solid #edf3fa
+		a
+			display: block
+		.region-card-name
+			display: block
+			margin-bottom: 9px
+			color: #021026
+			&.active
+				font-family: 'Proxima Nova Bold'
+			&:hover
+				font-weight: bold
+				text-decoration: underline
+			&:active
+				font-weight: bold
+				text-decoration: underline
+		.region-number
+			color: #8e9da7
+			margin-bottom: 3px
+		.region-email
+			margin-bottom: 16px
 
 
 
@@ -352,13 +364,26 @@
 		.office-slider-wrap
 			width: 100%
 		.office-slider
+			width: 100%
+			padding: 0 12%
 			.owl-item, .owl-item.active
-				width: 62px !important
+				width: 62px
+				margin: auto
 			.owl-nav
-				display: flex
+				width: 100%
+				left: 0
+				display: flex !important
 			.office-item
 				width: 62px
 				height: 62px
+				margin: auto
+
+	.office-map .office-slider .owl-nav .owl-next
+		right: 0px !important
+		top: 45px 
+	.office-map .office-slider .owl-nav .owl-prev
+		left: 0px !important
+		top: 50px			
 
 	.requisites
 		margin-bottom: 30px
@@ -385,16 +410,17 @@
 	.region-grid
 		.region-row
 			border-bottom: none
-			.regioin-card
-				border-bottom: 1px solid #edf3fa
-				//flex-basis: 50%
-				margin-bottom: 8px
-				.region-card-name
-					margin-bottom: 0
-				.region-number
-					margin-bottom: 12px
-				.region-email
-					display: none
+		.regioin-card
+			border-bottom: 1px solid #edf3fa
+			width: 50%
+			//flex-basis: 50%
+			margin-bottom: 8px
+			.region-card-name
+				margin-bottom: 0
+			.region-number
+				margin-bottom: 12px
+			.region-email
+				display: none
 	.region-title
 		display: block
 	.region-office, .region-name
