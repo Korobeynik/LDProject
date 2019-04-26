@@ -1,0 +1,312 @@
+.faq-wrap
+	.cooperation-tabs
+		justify-content: flex-start
+		li
+			margin-right: 84px
+		.base-btn
+			margin-left: auto
+			font-size: 13px
+			font-family: 'Proxima Nova Semibold'	
+	#shares-filter
+		display: none
+	.nice-select
+		display: none
+
+.faq-article
+	margin-bottom: 50px
+
+.faq-item
+	&.active
+		.faq-question
+			.qw-icon
+				circle
+					fill: #6e7a81 
+			span
+				font-family: 'Proxima Nova Bold'
+				border-bottom: 1px solid transparent
+				+ svg
+					transform: rotate(180deg)
+
+
+.faq-title
+	font-family: 'Proxima Nova Bold'
+	color: #021026
+	font-size: 21px
+	line-height: 1.43
+	margin-bottom: 30px
+
+.faq-question
+	display: flex
+	margin-bottom: 20px
+	align-items: center
+	span
+		display: inline-block
+		border-bottom: 1px solid $text
+		line-height: 18px
+		margin-right: 8px
+		+ svg
+				width: 12px
+	&:hover
+		cursor: pointer
+		span
+			border-bottom: 1px solid transparent
+	.qw-icon
+		margin-right: 20px
+
+.faq-answer
+	background-color: #eff1f1
+	border-radius: 3px
+	padding: 15px 30px
+	font-size: 15px
+	line-height: 1.67
+	color: #6a767d
+	margin-bottom: 25px
+	margin-left: 45px
+	display: none
+
+
+
+
+#question-popup
+	//display: none
+
+.mfp-close-btn-in .mfp-close
+	&:active
+		outline: none
+
+.mfp-content
+	.base-form
+		display: block
+.base-form
+	display: none
+	background-color: #fff
+	width: 100%
+	max-width: 747px
+	position: relative
+	margin: 0 auto
+	padding: 43px 70px
+	display: flex
+	flex-wrap: wrap
+	.base-title
+		text-align: center
+	input
+		width: 100%
+		display: flex
+		align-items: center
+		height: 48px
+		border-radius: 3px 
+		background-color: #eff1f1
+		margin-bottom: 20px
+		padding-left: 15px
+		border: none
+	textarea
+		width: 100%
+		border-radius: 3px 
+		background-color: #eff1f1
+		margin-bottom: 20px	
+		outline: none
+		border: none
+		height: 118px
+		resize: none
+		padding-top: 10px
+		padding-left: 15px
+	.form-row
+		display: flex
+		justify-content: space-between
+	.form-col
+		width: 48.5%
+		.nice-select
+			width: 100% !important
+			height: 48px
+			border: none
+			margin-bottom: 20px
+			&:hover
+				cursor: pointer
+			span
+				color: #a3a3a3
+				font-size: 13px
+				padding-top: 8px
+				display: inline-block
+			&:after
+				height: 48px
+				top: 4px
+				font-size: 36px
+
+.base-form
+	::-webkit-input-placeholder
+		color: #a3a3a3
+		font-size: 13px
+
+	::-moz-placeholder
+		color: #a3a3a3
+		font-size: 13px
+
+	::-ms-input-placeholder	
+		color: #a3a3a3
+		font-size: 13px
+
+	::-webkit-textarea-placeholder
+		color: #a3a3a3
+		font-size: 13px
+
+
+.footer-form
+	display: flex
+	justify-content: space-between
+	.button-wrap
+		text-align: right
+	.base-btn
+		margin-left: auto
+		width: 164px
+		height: 48px
+		margin-bottom: 12px
+	.nota
+		font-size: 13px
+		color: #b3babd
+		span
+			color: $red	
+
+
+.form-checkbox
+	display: flex
+	margin-bottom: 20px
+	padding-right: 15%
+	label.container
+		padding-right: 8px
+		padding-left: 30px
+		margin-top: 0px
+		margin-bottom: 15px
+		height: 25px
+		p
+			font-size: 13px
+			line-height: 23px
+			color: $text
+			position: relative
+			top: -3px
+	.container
+		display: block
+		position: relative
+		padding-left: 35px
+		margin-bottom: 12px
+		cursor: pointer
+		font-size: 13px
+		user-select: none
+		text-align: left
+		padding-right: 35px
+		margin-left: 0
+		margin-top: 0px
+		top: -4px
+		a
+			text-decoration: underline
+		input
+			position: absolute
+			opacity: 0
+			cursor: pointer
+			height: 0
+			width: 0
+
+
+	.checkmark
+		position: absolute
+		top: 0
+		left: 0
+		height: 20px
+		width: 20px
+		border-radius: 3px
+		background-color: $white
+		border: 1px solid #ddd
+		border-radius: 3px
+
+
+	.container
+		&:hover input ~ .checkmark
+			background-color: #fff
+		input:checked ~ .checkmark
+			background-color: #fff
+		p
+			font-size: 15px
+			line-height: 23px
+			color: $text
+
+
+	.checkmark:after
+		content: ""
+		position: absolute
+		display: none
+
+	.container
+		input:checked ~ .checkmark:after
+			display: block
+		.checkmark:after
+			left: 5px
+			top: 1px
+			width: 7px
+			height: 12px
+			border: solid $red
+			border-width: 0 2px 2px 0
+			-webkit-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			transform: rotate(45deg)
+		
+
+
+
+@media screen and (max-width: 600px)
+	.faq-question .qw-icon
+		min-width: 24px
+
+	.faq-question span
+		border-bottom: 1px solid transparent
+		text-decoration: underline
+	.faq-question span+svg
+		min-width: 12px
+
+	.faq-title
+		text-align: center
+		margin-bottom: 20px
+
+	.faq-wrap .cooperation-tabs
+		display: block
+		margin-bottom: 15px
+		li
+			display: none
+	.faq-wrap .nice-select
+		display: block
+
+	.faq-wrap .cooperation-tabs .base-btn
+		width: 100%
+
+	.base-form
+		padding: 25px 20px
+	.base-form .form-row
+		flex-wrap: wrap	
+	.base-form .form-col
+		width: 100%
+
+	.form-checkbox
+		padding-right: 0
+		padding-bottom: 20px
+
+	.footer-form
+		flex-wrap: wrap
+		margin-top: 20px	
+
+	.g-recaptcha
+		margin-bottom: 20px
+	.rc-anchor-normal
+		width: 100% !important
+
+	.footer-form .button-wrap
+		width: 100%
+		.base-btn
+			width: 100%
+
+	.footer-form .nota
+		text-align: left
+
+	.faq-answer
+		margin-left: 0
+		border-radius: 0
+		margin-right: -15px
+		margin-left: -15px							
+									

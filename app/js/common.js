@@ -150,7 +150,8 @@ $(document).ready(function(){
     $(this).closest('.object-description').find('p').not(':first').slideToggle();
   });
 
-  //$(element).is(":visible"); 
+
+  /* Catalog Card Switch */
 
   $('.switch-line').click(function(e) {
     e.preventDefault();
@@ -166,35 +167,31 @@ $(document).ready(function(){
     $('.switch-line').removeClass('active');
   });
 
+  /******/ 
+
  
-  $('.priceList-acordion .priceList-acordion-title').click( function() {
-    
-    var findArticle = $(this).next('.priceList-acordion-content');
-    var findWrapper = $(this).closest('.priceList-acordion-item');
-    
+  $('.faq-item .faq-question').click( function() {
+    let findArticle = $(this).next('.faq-answer');
+    let findWrapper = $(this).closest('.faq-item ');
     if (findArticle.is(':visible')) {
-        findArticle.slideUp(500);
+        findArticle.slideUp(300);
         findWrapper.removeClass('active');
       } else {
         findWrapper.find('>.priceList-acordion-content').slideUp();
-        findArticle.slideDown(500);
+        findArticle.slideDown(300);
         findWrapper.addClass('active');
       }
-    
   });
 
-  // let allPanels = $('.priceList-acordion-content').hide();
-    
-  // $('.priceList-acordion .priceList-acordion-title').click(function() {
-  //   allPanels.slideUp();
-  //   $(this).next().slideDown();
-  //   return false;
-  // });
 
-  
+
+
+  /* Call popup */
+
   $('.popup').magnificPopup();
 
-  //Galerry Popup
+  /* Galerry Popup */
+
   $(".gallery--init").each(function() {
     $(this).magnificPopup({
       delegate: 'a',
