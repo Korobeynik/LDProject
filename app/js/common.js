@@ -4,6 +4,20 @@ function screenClass() {
     if($(window).innerWidth() > 960) {
         $('.services-grid').removeClass('owl-carousel');
     } else {
+
+       $('.news-gallery').addClass('owl-carousel');
+          var owl3 = $('.news-gallery');
+          owl3.owlCarousel({
+              items:1,
+              loop:true,
+              margin: 0,
+              smartSpeed: 500,
+              nav: true,
+              dots: true,
+              autoplayTimeout: 20000,
+              autoplayHoverPause: false
+          });
+
         $('.services-grid').addClass('owl-carousel');
             var owl2 = $('.services-grid');
             owl2.owlCarousel({
@@ -135,6 +149,12 @@ $(window).scroll(function(){
 
 $(document).ready(function(){
 
+   $(".navigation a").hover(function () {    
+      $(this).prev().addClass("active");  //Add the active class to the area is hovered
+    }, function () {
+      $(this).prev().removeClass("active");
+    });    
+
   /* Change active .region-card-name for contact page - other region */
   $('.region-card-name').click( function(e) {
     e.preventDefault();
@@ -224,6 +244,10 @@ $(document).ready(function(){
         }
       }
     });
+  });
+
+  $('.more-photo').click( function() {
+    $('.news-gallery-hidden a:first-child').trigger('click');
   });
 
 

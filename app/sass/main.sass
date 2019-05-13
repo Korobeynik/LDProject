@@ -252,6 +252,9 @@ body
 			line-height: 20px
 			margin-bottom: 0
 			position: relative
+			&.active
+				&:before
+					display: none
 			&:before
 				content: ''
 				display: block
@@ -863,6 +866,8 @@ b, strong
 				background-repeat: no-repeat
 				background-size: cover
 				background-position: center center
+				.news-title
+					display: none
 			.news-item-content
 				padding: 21px 30px
 				.news-title
