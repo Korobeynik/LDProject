@@ -1,0 +1,214 @@
+.comparison
+	.base-title-red
+		margin-bottom: 38px
+.comparison-content
+	.catalog-grid
+		display: flex
+		margin-bottom: 31px
+	.catalog-sidebar
+		margin-left: 0
+		margin-right: 22px
+		background: $white
+		padding: 0
+	.comparison-filter
+		margin-right: 24px
+		display: flex
+		flex-direction: column
+		width: 287px
+		margin-bottom: 42px
+		.catalog-select
+			height: 48px
+			margin-bottom: 10px
+			span
+				line-height: 48px
+			&:after
+				height: 48px
+				font-size: 40px
+				width: 48px
+		.filter-btn-block
+			margin-bottom: 10px
+			display: flex
+			.filter-btn
+				height: 48px
+				width: 142px
+				font-size: 10px
+				&:focus, &:active
+					background: $red
+					color: $white
+				&:last-child
+					margin-left: 2px
+					
+		.add-comparison
+			height: 48px
+			width: 142px
+			font-size: 10px
+			letter-spacing: 0.4px
+			margin-bottom: 8px
+			width: 100%
+			img
+				margin-right: 10px
+		.clear-list
+			font-size: 15px
+			line-height: 23px
+			color: $red
+			border-bottom: 1px dashed $red
+			width: 119px
+			text-decoration: none
+	.filter-description
+		.description-product, .description-item
+			p
+				font-size: 15px
+				line-height: 40px
+				margin-bottom: 0
+				color: $light
+		.description-product
+			margin-bottom: 49px
+	.catalog-content
+		.description-content
+			width: 100%
+			display: flex
+			.description-item-content
+				width: 33.3%
+				&:first-child
+					.item-info
+						padding-left: 31px
+						&:nth-child(4)
+							padding-left: 31px
+				.item-info
+					padding: 11px 0
+					&:nth-child(4)
+						padding: 18px 0 17px 0
+					&:nth-child(odd)
+						background: $gray
+					p
+						font-size: 15px
+						margin-bottom: 0
+						line-height: normal
+	.slider-wrap
+		width: 100%
+	.comparison-slider
+		display: flex
+		margin-bottom: 42px
+		.owl-stage-outer
+			padding-left: 2px
+		.owl-nav
+			bottom: 240px
+			display: flex
+			left: 813px
+			.owl-prev, .owl-next
+				border: none !important
+				&:hover
+					border: none !important
+					background-color: transparent
+					svg
+						path
+							fill: $red
+				
+		.owl-prev
+			transform: rotate(-180deg)
+		.comparison-card
+			width: 289px
+			border-radius: 3px
+			box-shadow: 0 0 5px 0 rgba(104, 117, 124, 0.19)
+			padding: 14px 14px 18px
+			position: relative
+			.card-close
+				width: 25px
+				height: 23px
+				background: $gray
+				border-radius: 3px
+				text-align: center
+				position: absolute
+				top: 0
+				right: 0
+				a
+					display: block
+					width: 100%
+					height: 100%
+					position: relative
+					img
+						position: absolute
+						top: 50%
+						left: 50%
+						transform: translate(-50%, -50%)
+			.card-body
+				display: flex
+				padding: 0
+				margin-bottom: 14px
+				.comparison-image
+					flex-basis: 50%
+					margin-right: 15px
+					max-height: 104px
+					position: relative
+					img
+						width: 100%
+						height: 100%
+					.label
+						position: absolute
+						right: 0
+						top: 20px
+						color: #fff
+						text-transform: uppercase
+						letter-spacing: .5px
+						font-size: 12px
+						font-size-font-family: 'Proxima Nova Semibold'
+						padding: 5px 10px
+						padding-left: 15px
+						border-radius: 30px 0 0 30px
+						background-color: #de2d3e
+				.card-description
+					flex-basis: 50%
+					.card-title
+						font-size: 13px
+						line-height: 19px
+						font-weight: 600
+						margin-bottom: 14px
+					.unit-block
+						width: 124px
+						height: 39px
+						display: flex
+						border-radius: 3px
+						input
+							width: 65px
+							border: 1px solid #eff1f1
+							text-align: center
+							border-radius: 3px 0 0 3px
+						span
+							display: block
+							width: 64px
+							height: 40px
+							background: #eff1f1
+							text-align: center
+							line-height: 40px
+							font-size: 15px
+							color: #68757c
+							-webkit-border-radius: 0 3px 3px 0
+							border-radius: 0 3px 3px 0
+			.price-wrap
+				display: flex
+				justify-content: space-between
+				.card-links
+
+					.price-spb
+						font-size: 9px
+						font-weight: 600
+						color: $light
+						margin-bottom: 5px
+						display: block
+						line-height: 1.3
+					.price-product
+						font-size: 21px
+						font-weight: bold
+						line-height: 20px
+				.buttons-wrap
+					.btn-card
+						width: 124px
+						img
+							margin-right: 8px
+						span
+							font-size: 11px
+							letter-spacing: 0.4px
+							font-weight: 600
+.gray-btn
+	background: $gray
+	color: $d-gray

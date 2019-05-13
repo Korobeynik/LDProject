@@ -36,6 +36,111 @@ function screenClass() {
             });
     }
 
+    if($(window).innerWidth() > 768) {
+        $('.search-catalog-content').removeClass('owl-carousel');
+    } else {
+        $('.search-catalog-content').addClass('owl-carousel');
+            var owl2 = $('.search-catalog-content');
+            owl2.owlCarousel({
+                items:1,
+                loop:true,
+                margin: 10,
+                smartSpeed: 500,
+                nav: true,
+                dots: true,
+                autoplayTimeout: 20000,
+                autoplayHoverPause: false,
+                responsiveClass: true,
+                responsive : {
+                    // breakpoint from 0 up
+                    0 : {
+                        items:1
+                    },
+                    // breakpoint from 480 up
+                    480 : {
+                       items:1
+                    },
+                    // breakpoint from 768 up
+                    768 : {
+                       items: 2
+                    },
+                    1000 : {
+                       items: 2
+                    }
+                }
+            });
+    }
+
+    if($(window).innerWidth() > 768) {
+        $('.search-objects-content').removeClass('owl-carousel');
+    } else {
+        $('.search-objects-content').addClass('owl-carousel');
+            var owl2 = $('.search-objects-content');
+            owl2.owlCarousel({
+                items:1,
+                loop:true,
+                margin: 15,
+                smartSpeed: 500,
+                nav: true,
+                dots: true,
+                autoplayTimeout: 20000,
+                autoplayHoverPause: false,
+                responsiveClass: true,
+                responsive : {
+                    // breakpoint from 0 up
+                    0 : {
+                        items:1
+                    },
+                    // breakpoint from 480 up
+                    480 : {
+                       items:1
+                    },
+                    // breakpoint from 768 up
+                    768 : {
+                       items: 2
+                    },
+                    1000 : {
+                       items: 2
+                    }
+                }
+            });
+    }
+
+    if($(window).innerWidth() > 768) {
+        $('.search-news-block').removeClass('owl-carousel');
+    } else {
+        $('.search-news-block').addClass('owl-carousel');
+            var owl2 = $('.search-news-block');
+            owl2.owlCarousel({
+                items:1,
+                loop:true,
+                margin: 10,
+                smartSpeed: 500,
+                nav: true,
+                dots: true,
+                autoplayTimeout: 20000,
+                autoplayHoverPause: false,
+                responsiveClass: true,
+                responsive : {
+                    // breakpoint from 0 up
+                    0 : {
+                        items:1
+                    },
+                    // breakpoint from 480 up
+                    480 : {
+                       items:2
+                    },
+                    // breakpoint from 768 up
+                    768 : {
+                       items: 2
+                    },
+                    1000 : {
+                       items: 2
+                    }
+                }
+            });
+    }
+
     if($(window).innerWidth() > 720) {
         $('.news-slider').owlCarousel('destroy'); 
     } else {
@@ -299,6 +404,34 @@ $(document).ready(function(){
         }
     }
 	});
+
+  $(".comparison-slider").owlCarousel({
+    items: 3,
+    loop:true,
+    margin: 18,
+    nav: true,
+    dots: true,
+    smartSpeed: 700,
+    navText: ['<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <circle cx="18" cy="18" r="18" stroke="#EFF1F1" stroke-width="2"/> <path fill="#000" d="M20.23 13.16a.537.537 0 0 0-.766 0 .541.541 0 0 0 0 .76l3.881 3.88H10.537a.541.541 0 0 0 0 1.081h12.808l-3.881 3.873a.55.55 0 0 0 0 .765.537.537 0 0 0 .765 0l4.8-4.8a.525.525 0 0 0 0-.756l-4.8-4.802z"/> </g> </svg>','<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"> <g fill="none" fill-rule="evenodd" transform="translate(1 1)"> <circle cx="18" cy="18" r="18" stroke="#EFF1F1" stroke-width="2"/> <path fill="#000" d="M20.23 13.16a.537.537 0 0 0-.766 0 .541.541 0 0 0 0 .76l3.881 3.88H10.537a.541.541 0 0 0 0 1.081h12.808l-3.881 3.873a.55.55 0 0 0 0 .765.537.537 0 0 0 .765 0l4.8-4.8a.525.525 0 0 0 0-.756l-4.8-4.802z"/> </g> </svg>'],
+    responsiveClass: true,
+    responsive: {
+        // breakpoint from 0 up
+        0: {
+          items: 3
+        },
+        // breakpoint from 480 up
+        480: {
+           items: 3
+        },
+        // breakpoint from 768 up
+        768 : {
+           items: 3
+        },
+        1000 : {
+           items: 3
+        }
+      }
+  });
 
   $(".project-full-slider").owlCarousel({
     items: 1,

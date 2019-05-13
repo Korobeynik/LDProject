@@ -1,0 +1,185 @@
+.search-catalog
+	.catalog-title
+		display: flex
+	.catalog-grid
+		flex-direction: column
+		margin-bottom: 21px
+	.catalog-content
+		.card
+			.btn-card
+				width: 118px
+				span
+					letter-spacing: 0.5px
+			.card-review
+				a
+					font-size: 11px
+					text-align: right
+					color: $text
+					text-decoration: underline 
+					display: block
+				.assessment
+					img
+						width: 16px
+						
+.base-title-red
+			margin-right: 9px
+			span
+				color: $red
+
+.search-catalog, .search-catalog-objects, .search-news
+	.owl-carousel
+		.owl-dots 
+			display: flex
+			justify-content: center
+			margin-bottom: 26px
+			.owl-dot 
+			    width: 8px
+			    height: 8px
+			    background-color: #d8d8d8
+			    -webkit-border-radius: 50%
+			    border-radius: 50%
+			    margin: 0 3.75px
+			    outline: 0
+			.active
+				background: $red
+
+.search-news
+	margin-bottom: 78px
+	.news-block
+		display: flex
+		justify-content: space-between
+		margin-bottom: 42px
+		&:last-child
+			margin-bottom: 0
+		.search-news-image
+			min-width: 273px
+			min-height: 180px
+			margin-right: 39px
+			img
+				width: 100%
+				height: 100%
+		.search-news-content
+			p
+				font-size: 15px
+				line-height: 23px
+				margin-bottom: 18px
+				b
+					color: $red
+			.news-more
+				font-size: 13px
+				font-weight: 600
+				letter-spacing: 0.5px
+				text-decoration: none
+				color: $text
+				text-transform: uppercase
+				border-bottom: 1px dashed $text
+
+.quantity-product-title
+	font-size: 27px
+	color: #021026
+	line-height: 30px
+	margin-bottom: 23px
+	span
+		margin-left: 12px
+.quantity-product
+	font-size: 13px
+	margin-top: 14px
+	font-weight: 600
+	letter-spacing: 0.5px
+	color: $red
+a.search-more
+	font-size: 17px
+	letter-spacing: 0.7px
+	font-weight: bold
+	color: $text
+	border-bottom: 1px dashed $red
+	text-decoration: none
+	text-transform: uppercase
+	margin: 0 auto 32px
+	max-width: 136px
+	display: block
+	margin-top: 16px
+.search-btn-more
+	display: none
+
+
+
+@media screen and (max-width: 1024px)
+	.search-news
+		.news-block
+			.more-text
+				display: none
+/**/
+
+@media screen and (max-width: 800px)
+	.search-news
+		.search-news-block
+			display: flex
+			justify-content: center
+			.news-block
+				flex-direction: column
+				flex-basis: 40%
+				margin:
+					left: 10px
+					right: 10px
+					bottom: 27px
+				.search-news-image
+					margin-right: 0
+					margin-bottom: 41px
+					img
+						width: 100%
+						min-height: 191px
+	.search-catalog-objects
+		.object-card
+			margin: 0 auto 24px
+/**/
+
+@media screen and (max-width: 768px)
+	.search-news
+		.search-news-block
+			flex-direction: column
+/**/
+
+@media screen and (max-width: 480px)
+	.search-catalog
+		.catalog-title
+			flex-direction: column
+			text-align: center
+			margin-bottom: 34px
+			h2
+				font-size: 22px
+				margin-bottom: 7px
+				margin-right: 0
+			span.quantity-product
+				margin-top: 0
+		.catalog-grid
+			margin-bottom: 0
+			.card
+				margin-bottom: 24px
+	.search-btn-more
+		display: block
+		margin: 0 auto
+		margin-bottom: 40px
+		text-align: center
+		line-height: 40px
+	.quantity-product
+		letter-spacing: 0.4px
+	.quantity-product-title
+		font-size: 21px
+		margin-bottom: 11px
+	a.search-more
+		display: none
+	.search-catalog-objects
+		.object-card
+			margin: 0
+			margin-bottom: 22px
+	.search-news
+		margin-bottom: 7px
+		.search-news-block
+			.news-block
+				margin-left: 0
+				margin-right: 0
+	.owl-carousel
+		.owl-dots
+			margin-bottom: 0
+/**/
